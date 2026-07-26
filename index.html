@@ -1,0 +1,382 @@
+<!DOCTYPE html><html dir="rtl" lang="he" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>מדרשת דרור | Midreshet Dror</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#d5c4b1",
+                        "outline-variant": "#c1c9c0",
+                        "background": "#faf9f6",
+                        "secondary": "#6b5c4c",
+                        "secondary-fixed-dim": "#d7c3b0",
+                        "on-tertiary-fixed": "#231a0e",
+                        "deep-charcoal": "#122023",
+                        "secondary-container": "#f4dfcb",
+                        "surface": "#faf9f6",
+                        "surface-dim": "#dbdad7",
+                        "outline": "#717972",
+                        "on-primary-fixed-variant": "#205034",
+                        "on-surface": "#1a1c1a",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#514537",
+                        "on-tertiary-container": "#514537",
+                        "soft-cream": "#FFFDF5",
+                        "secondary-fixed": "#f4dfcb",
+                        "inverse-surface": "#2f312f",
+                        "on-secondary-container": "#716252",
+                        "warm-wood": "#8B5E3C",
+                        "on-background": "#1a1c1a",
+                        "on-primary-container": "#215034",
+                        "spring-mist": "#F6FFEB",
+                        "surface-container-highest": "#e3e2e0",
+                        "primary-container": "#8fc19e",
+                        "tertiary-fixed": "#f2e0cc",
+                        "surface-tint": "#39684b",
+                        "primary-fixed": "#bbefc9",
+                        "on-secondary-fixed-variant": "#524436",
+                        "inverse-primary": "#a0d2ae",
+                        "surface-variant": "#e3e2e0",
+                        "surface-container-high": "#e9e8e5",
+                        "tertiary": "#695c4d",
+                        "primary-fixed-dim": "#a0d2ae",
+                        "on-surface-variant": "#414942",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#002110",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#efeeeb",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#241a0e",
+                        "on-secondary": "#ffffff",
+                        "primary": "#39684b",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-container-low": "#f4f3f1",
+                        "tertiary-container": "#c4b3a1",
+                        "surface-bright": "#faf9f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Be Vietnam Pro"],
+                        "display-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Be Vietnam Pro"],
+                        "display-lg-mobile": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "caption": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #faf9f6;
+            color: #1a1c1a;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .transition-slow {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="font-body-md overflow-x-hidden">
+<!-- Header (TopNavBar) -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-margin-desktop py-base max-w-container-max mx-auto flex-row">
+<div class="flex items-center gap-base"><img alt="מדרשת דרור לוגו" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwdqbpgSUkRP_Py578zwo7sGColMUzkA6ow0ZAC8lV6A16JlWUzheeQGJGX7Y_p6SmAR8QRQPrdVOncZcKhP6md2qCAub2-YfQZNskwvbiZ0UUymGpHQMIqEttsxUURBF9qPJo5MAGPuY-E4I-EGLfwJosE0n1IoyppxH3P3K9GpwYYDngHHL5rHGJLyQ3l7_6NbItH8sZHVqEE-Nl-A-WBSIvNVwfLmv68xButzohghRVbH99WpQZlBZ48OXHqDvDcYvAF3oOY-3">
+
+<span class="text-primary font-headline-md text-headline-md">מדרשת דרור</span></div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-md text-label-md" href="#">דף הבית</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#about">אודות</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#programs">סמינרים</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#contact">צור קשר</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[85vh] flex items-center justify-center overflow-hidden transition-all duration-1000 opacity-100">
+<div class="absolute inset-0 z-0"><img alt="Young Jewish and Arab adults engaged in dialogue in a beautiful Israeli landscape during golden hour" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvgpjrS8GoNvwk-yAdiAqul8yYi4Q9GoK4J3QDz-JdX8cOWs4UlR3OsgqZ67-mxIC_jAzTFdp7w0wV0fjsE0GU77RDTsHM-R8I1bKeDULv5h2fZDxyUvv0H1cNEtIPhWORWFVRI7EfKnK4RN4mkDIpVw13hSLi6b1NqyAkjsgTTh7Dp7Ivjz3ESnY2yJRRylVI4WLWOSVQoDneDDQmVBJupt1pblysdj2U0WyQId_ZSz8zDJFrPQTzau2M"><div class="absolute inset-0 bg-black/30"></div></div>
+<div class="relative z-10 text-center px-margin-mobile">
+<h1 class="text-white font-display-lg text-display-lg-mobile md:text-display-lg max-w-3xl mx-auto mb-gutter drop-shadow-lg">
+                    מדרשת דרור - הבית לסמינרים פוליטיים חברתיים
+                </h1>
+<p class="text-white font-headline-md text-headline-md max-w-2xl mx-auto opacity-90 drop-shadow-md">
+                    "וּקְרָאתֶם דְּרוֹר בָּאָרֶץ לְכָל יֹשְׁבֶיהָ"
+                </p>
+<div class="mt-section-gap flex gap-gutter justify-center">
+<a class="bg-primary text-on-primary px-8 py-3 rounded-md font-headline-md text-headline-md hover:scale-105 transition-slow" href="#programs">הסמינרים שלנו</a>
+<a class="border border-white text-white px-8 py-3 rounded-md font-headline-md text-headline-md hover:bg-white hover:text-primary transition-slow" href="#contact">בואו ניצור סמינר</a></div>
+</div>
+</section>
+<!-- About Intro Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100" id="about">
+<div class="grid md:grid-cols-2 gap-section-gap items-center">
+<div class="space-y-gutter">
+<h2 class="font-headline-lg text-headline-lg text-primary">לימוד שמשנה נקודת מבט</h2>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        מדרשת דרור היא מרכז ללימוד, העמקה ועשייה חברתית-פוליטית בתחום הסכסוך הישראלי פלסטיני. התוכניות שאנו מייצרים מבוססים על ערכים הומניסטיים, בניית קהילה, לימוד מקצועי, נוכחות בשטח, ושיח בגובה העיניים.
+                    </p>
+<div class="flex items-center gap-base text-warm-wood">
+<span class="material-symbols-outlined">diversity_3</span>
+<span class="font-label-md">בניית קהילה מעורבת ומשפיעה</span>
+</div>
+<div class="pt-4"><a href="#about" class="bg-primary text-on-primary px-8 py-3 rounded-md font-headline-md text-headline-md hover:scale-105 transition-slow inline-block">מי אנחנו</a></div></div>
+<div class="relative">
+<div class="aspect-square bg-spring-mist rounded-xl overflow-hidden border border-outline-variant">
+<img alt="A meaningful and authentic photograph of a group of young Jewish and Arab adults sitting in a circle outdoors in a beautiful Israeli landscape. They are engaged in a serious but respectful dialogue during golden hour." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDln859FUoll5B567yopJ8lPsR8udY4XtxOCI85QbffiVij0ToP1phgAk00VDRnKE1bcEtr1cWngCcaqbuX-TwHEbTzLC8_aKGWgu8XcYaR21WarLljPAGCx2RqSL1vkPBNBhcs0VozQj3wmjqhCavLhLFY98gRRCT4gdH60joEqsdHtrudYPzQsXOyNFx5dUCl3aRLGjAUPU94PZkYB4mKuXT9KKkSYUtTDLHGphf8z4i1l59DMUEpXwR5G5DjUPr8AaNI43v_G8Mq">
+</div>
+
+</div>
+</div>
+</section>
+<!-- Programs Overview (Bento Grid Style) -->
+<section class="py-section-gap bg-soft-cream transition-all duration-1000 opacity-100" id="programs">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-section-gap">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-lg text-deep-charcoal mb-4">בואו ללמוד אצלנו</h2>
+<p class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-surface-variant">
+                        מגוון סמינרים ביקורתיים ומעמיקים על הסכסוך הישראלי פלסטיני, המותאמים לקהלים שונים ולשלבים שונים של מעורבות.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Program Card 1 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant transition-slow hover:border-primary group">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-slow" data-alt="A group of people on an educational field trip, standing on a hill overlooking a valley with traditional Palestinian terraces and ancient stone walls. An educator is pointing towards a historical site in the distance. The lighting is bright and clear, reflecting a day of active field learning and geographic exploration." src="https://lh3.googleusercontent.com/aida/AP1WRLug5Vexz_RypL1E2AlRTc3aDA7o4Nm1xmMb-ldvr2lGQe5t8y2XmScxp8ZoTMOvIziSd4iRMeRBcUaAexquyJarhyfmvClnD5FHhVETfQQQCTI6DUTTO7GYwqCHFj7YQGVi9Uf_eQy-6lJDyYG7KQNx3bAkgd9oMYuS--3G7jMWyX0XoU2nMlMUt-EId99wCrM09FqaoTVXY_xNOrIb48ORNqYsBnCR9KRdEaxXluQ4dh9rD6-8VZskyCpP">
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">סמינר סתיו</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">תכנית הדגל שלנו— סמינר הקיץ המקיף והמעמיק ביותר לחוויה משנה חיים.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                            לפרטים נוספים
+                            <span class="material-symbols-outlined">arrow_back</span>
+</a>
+</div>
+<!-- Program Card 2 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant transition-slow hover:border-primary group">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-slow" data-alt="A close-up shot of a library table with various historical maps of the Middle East, a compass, and a collection of scholarly books on peace and conflict resolution. The lighting is warm and academic, emphasizing the depth of research and study involved in the educational programs." src="https://lh3.googleusercontent.com/aida/AP1WRLu9-GFMbaumAIT_rrZz6JF4PMs6_2dOuS4ZQbJALzPMuy_WePSzgZ-vi2Dn3dibf3nE-cPvGURIA14aJGzN4CqG7CUvaund2TX4J9xChbAnpRlY-IpFjK9VWqrCVF8Cnr7wcmX5AOIBLXnmrwE-7NmicjJCzkw9FB_ilYGlOn8v1xctYkHBcH07mH3GPI8tP914JiiTYNZ8DBfH3dv2W5QZcXwdCsODw9ls2K4ErjKvumCABbclsSm7Riiy">
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">סמינר אביב</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">סמינר מרוכז וממוקד המעניק כלים ראשוניים להבנת המציאות הפוליטית.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                            לפרטים נוספים
+                            <span class="material-symbols-outlined">arrow_back</span>
+</a>
+</div>
+<!-- Program Card 3 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant transition-slow hover:border-primary group">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-slow" data-alt="A group discussion taking place in an urban setting, possibly a modern conference room in Tel Aviv. People from different backgrounds are sharing ideas around a central table with coffee and notes. The aesthetic is professional and contemporary, reflecting the academic structure of the course." src="https://lh3.googleusercontent.com/aida/AP1WRLvmC5RzIDl3LqB_psyVZ79LqUvKRbP5QPiADwQKetmflwqUteCTc7vn1V6OgxEEZA5eQKxOHn4ERt--hL7ret2vo_dbZuugP3E8RDtxjhOKgD0G0JqGEOelTCmkNSzNIf8MCKZDPtUORCRIYFP6tm-f98T0MgIUjfsB187_xk7XmiHC7De7cLbcuB4TFOa2O-xgFI-2eg89eaBZdSBaRAA6T6_Ki7el_Hr1swKNPqwae5cpl1kv-Mg9PH3P">
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">מכיבוש לפיוס</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">קורס אקדמי בן 13 מפגשים בתל אביב, המשלב תיאוריה ופרקטיקה פוליטית.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                            לפרטים נוספים
+                            <span class="material-symbols-outlined">arrow_back</span>
+</a>
+</div>
+</div>
+</div>
+</section><section class="py-section-gap px-margin-desktop transition-all duration-1000 opacity-100">
+  <div class="max-w-container-max mx-auto text-center">
+    <div class="max-w-3xl mx-auto space-y-gutter">
+      <h2 class="font-display-lg text-display-lg-mobile md:text-headline-lg text-primary">צרו איתנו סמינרים</h2>
+      <p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+        המדרשה משמשת כצומת לחיבור בין אזרחים שרוצים להרחיב את הידע ולפעול, ובין פעילים וארגונים חברתיים, המבקשים ליצור פעילות חינוכית פוליטית, מעמיקה וביקורתית. אנו מעניקים את הכלים להוביל וללמוד איך עושים פעילות פוליטית משמעותית.
+      </p>
+      <div class="pt-gutter">
+        <a href="#contact" class="bg-primary text-on-primary px-8 py-3 rounded-md font-headline-md text-headline-md hover:scale-105 transition-slow inline-block">צרו קשר</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Partnership/Donation Section -->
+<section class="py-section-gap px-margin-desktop transition-all duration-1000 opacity-100">
+<div class="max-w-container-max mx-auto bg-primary-container rounded-3xl p-gutter md:p-section-gap flex flex-col md:flex-row items-center gap-gutter text-on-primary-container">
+<div class="flex-1 space-y-gutter">
+<h2 class="font-headline-lg text-headline-lg">שותפות למען העתיד</h2>
+<p class="font-body-lg text-body-lg opacity-90 leading-relaxed">
+                        מדרשת דרור היא פרויקט משותף של ארגון <strong>לוחמים לשלום</strong> וארגון <strong>שוברים שתיקה</strong>. הפעילות שלנו מבוססת כולה על תרומות של אזרחים המאמינים בכוחו של חינוך פוליטי.
+                    </p>
+<div class="flex gap-gutter">
+<button class="bg-white text-primary px-8 py-3 rounded-md font-headline-md transition-slow hover:bg-opacity-90">תרומה לפרויקט</button>
+<button class="border border-white text-white px-8 py-3 rounded-md font-headline-md transition-slow hover:bg-white hover:text-primary">קראו עלינו עוד</button>
+</div>
+</div>
+<div class="flex-1 w-full flex justify-center">
+<div class="relative w-full max-w-sm aspect-square">
+<img alt="Midreshet Dror Activity" class="w-full h-full object-cover rounded-2xl rotate-3 shadow-xl" src="https://lh3.googleusercontent.com/aida/AP1WRLugzlubg2L7g9xSG3RglizMnr22jepUyRhlWAvsIJj2OlLYmmOQIxX4wvwIjRIMkonTRbNQGRol6YMqdbX4A5cnQ9HTIEbvjEb5g3PQdPTBk5iHuTH6bpv6TKTgrT5yQTwFETne_Aah0nan-FQgkFcWaX-ow6SutYsEWvS-rpAp3cDrSTzwpE7iu6Pk4OPdZDDuP6PRPIRxuu9KAdVl6roQsUXjke8c5uG7ynakZAHTUfHWbgZUCkKiucQ">
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap bg-surface transition-all duration-1000 opacity-100">
+<div class="max-w-3xl mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-center mb-section-gap">שאלות ותשובות</h2>
+<div class="space-y-gutter">
+<details class="group bg-soft-cream rounded-lg p- gutter cursor-pointer">
+<summary class="flex justify-between items-center font-headline-md text-headline-md list-none p-4">
+<span class="">מהי מדרשת דרור?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-4 pt-0 font-body-md text-body-md opacity-80">
+                            מדרשת דרור היא מוסד חינוכי המבקש להרחיב את הידע של הציבור הישראלי בנוגע לסכסוך, מתוך אמונה שרק ידע והעמקה יכולים להוביל לשינוי פוליטי וחברתי אמיתי.
+                        </div>
+</details>
+<details class="group bg-soft-cream rounded-lg p- gutter cursor-pointer">
+<summary class="flex justify-between items-center font-headline-md text-headline-md list-none p-4">
+<span class="">מי יכול להשתתף בסמינרים?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-4 pt-0 font-body-md text-body-md opacity-80">
+                            הסמינרים פתוחים לכל מי שמעוניין להעמיק את ידיעותיו, לבחון את עמדותיו ולהכיר את המציאות בשטח מקרוב. אנו פונים לקהלים מגוונים - סטודנטים, צעירים, ואזרחים פעילים.
+                        </div>
+</details>
+<details class="group bg-soft-cream rounded-lg p- gutter cursor-pointer">
+<summary class="flex justify-between items-center font-headline-md text-headline-md list-none p-4">
+<span class="">איפה מתקיימות הפעילויות?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-4 pt-0 font-body-md text-body-md opacity-80">
+                            הפעילויות משלבות מפגשים עיוניים בערים מרכזיות (תל אביב, ירושלים) וסיורי שטח מעמיקים ברחבי הגדה המערבית וקו התפר.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100" id="contact">
+<div class="flex flex-col gap-section-gap md:flex-row">
+<div class="md:w-1/2 space-y-gutter">
+<h2 class="font-display-lg text-display-lg-mobile text-primary">בואו נדבר</h2>
+<p class="font-headline-md text-headline-md text-on-surface-variant">מתעניינות.ים בתוכניות? יש שאלות? מלאו את הטופס ונחזור אליכן.ם בהקדם האפשרי.</p>
+<div class="pt-gutter space-y-4">
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="">info@midreshetdror.org</span>
+</div>
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="">תל אביב / ירושלים</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 bg-white p-gutter md:p-12 rounded-3xl shadow-sm border border-outline-variant">
+<form class="space-y-gutter">
+<div class="grid grid-cols-2 gap-gutter">
+<div class="space-y-2">
+<label class="block text-right font-label-md">שם פרטי</label>
+<input class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
+</div>
+<div class="space-y-2">
+<label class="block text-right font-label-md">שם משפחה</label>
+<input class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-right font-label-md">אימייל</label>
+<input class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="email">
+</div>
+<div class="space-y-2">
+<label class="block text-right font-label-md">תוכן ההודעה</label>
+<textarea class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-md font-headline-md hover:bg-opacity-90 transition-all" type="submit">שלחו הודעה</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-container dark:bg-on-secondary-container mt-section-gap">
+<div class="flex flex-col md:flex-row-reverse justify-between items-center w-full px-margin-desktop py-gutter gap-base max-w-container-max mx-auto">
+<div class="flex gap-gutter items-center">
+<img alt="מדרשת דרור" class="h-6 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbuowwGwHY3yfDYJZkjrqgc4BcThoB-FVmRw438g9TSqb3kDFe9kzP8pySb0RZK42uVQHGBfAyZ4KUSn8s1Xjy_SGULfJp0gegHdtnMoC_3LtV6-ccZ9DJm2JAWfvMApG05LmsR9qkeiFNXg2nvVQiGj5U-vkSWHA51I2ayzTP5uyZaqXEuJDhDtb231g1U29ugTj-adyd3XgpuaoTjHq4x3M4r5WrbZFV5-3gskHhCk1CJG4vVE3oSt4lDUro9QTZyf2ccdg7gk63">
+</div>
+<div class="flex gap-gutter font-body-md text-body-md text-on-secondary-container">
+<a class="hover:text-warm-wood transition-colors" href="https://www.facebook.com/profile.php?id=61557330713450">פייסבוק</a>
+<a class="hover:text-warm-wood transition-colors" href="https://www.instagram.com/midreshetdror/">אינסטגרם</a>
+<a class="hover:text-warm-wood transition-colors" href="#">תנאי שימוש</a>
+<a class="hover:text-warm-wood transition-colors" href="#">מדיניות פרטיות</a>
+</div>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-80 text-center md:text-right">
+                © 2024 מדרשת דרור. כל הזכויות שמורות. בשיתוף לוחמים לשלום ושוברים שתיקה.
+            </p>
+</div>
+</footer>
+<script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple scroll reveal effect for sections
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+
+
+
+
+</body></html>
