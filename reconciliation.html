@@ -1,0 +1,337 @@
+<!DOCTYPE html><html dir="rtl" lang="he"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>מכיבוש לפיוס | מדרשת דרור</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bento-card {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+        }
+        .glass-effect {
+            backdrop-filter: blur(8px);
+            background: rgba(255, 253, 245, 0.8);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#a0d2ae",
+                        "tertiary-fixed": "#f2e0cc",
+                        "on-secondary-container": "#716252",
+                        "surface": "#faf9f6",
+                        "on-surface-variant": "#414942",
+                        "on-secondary-fixed-variant": "#524436",
+                        "surface-container": "#efeeeb",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#c4b3a1",
+                        "error": "#ba1a1a",
+                        "deep-charcoal": "#122023",
+                        "outline": "#717972",
+                        "on-primary-fixed": "#002110",
+                        "on-background": "#1a1c1a",
+                        "on-error": "#ffffff",
+                        "tertiary": "#695c4d",
+                        "warm-wood": "#8B5E3C",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2f312f",
+                        "inverse-on-surface": "#f2f1ee",
+                        "secondary-container": "#f4dfcb",
+                        "soft-cream": "#FFFDF5",
+                        "on-primary-fixed-variant": "#205034",
+                        "surface-dim": "#dbdad7",
+                        "secondary-fixed-dim": "#d7c3b0",
+                        "on-tertiary-fixed-variant": "#514537",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#514537",
+                        "surface-container-low": "#f4f3f1",
+                        "surface-variant": "#e3e2e0",
+                        "inverse-primary": "#a0d2ae",
+                        "primary-fixed": "#bbefc9",
+                        "primary": "#39684b",
+                        "primary-container": "#8fc19e",
+                        "surface-tint": "#39684b",
+                        "on-secondary-fixed": "#241a0e",
+                        "outline-variant": "#c1c9c0",
+                        "on-primary-container": "#215034",
+                        "on-tertiary-fixed": "#231a0e",
+                        "secondary": "#6b5c4c",
+                        "on-secondary": "#ffffff",
+                        "background": "#faf9f6",
+                        "spring-mist": "#F6FFEB",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-surface": "#1a1c1a",
+                        "tertiary-fixed-dim": "#d5c4b1",
+                        "surface-container-high": "#e9e8e5",
+                        "secondary-fixed": "#f4dfcb",
+                        "surface-bright": "#faf9f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px",
+                        "section-gap": "80px",
+                        "gutter": "24px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Be Vietnam Pro"],
+                        "headline-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Be Vietnam Pro"],
+                        "display-lg": ["Be Vietnam Pro"],
+                        "caption": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "display-lg-mobile": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-soft-cream text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-margin-desktop py-base max-w-container-max mx-auto flex-row">
+<div class="flex items-center gap-base"><img alt="מדרשת דרור לוגו" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwdqbpgSUkRP_Py578zwo7sGColMUzkA6ow0ZAC8lV6A16JlWUzheeQGJGX7Y_p6SmAR8QRQPrdVOncZcKhP6md2qCAub2-YfQZNskwvbiZ0UUymGpHQMIqEttsxUURBF9qPJo5MAGPuY-E4I-EGLfwJosE0n1IoyppxH3P3K9GpwYYDngHHL5rHGJLyQ3l7_6NbItH8sZHVqEE-Nl-A-WBSIvNVwfLmv68xButzohghRVbH99WpQZlBZ48OXHqDvDcYvAF3oOY-3">
+<span class="text-primary font-headline-md text-headline-md">מדרשת דרור</span></div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">דף הבית</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#about">אודות</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-md text-label-md" href="#programs">סמינרים</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#contact">צור קשר</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[80vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="מכיבוש לפיוס" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsXL_j7obQOHUppfxV3Jj0vojdByPSDqVVkC6cEj399VJsVDUDMjv_i_-30T0p1XssuvJzLfcxvOWXF5C_Vft4yH1c--wEMI83C4sKORbBGqeZ_eBtOn1uB7MQLDEqkTi2gEANGgmxArAgwiO_Uz-GgoZIM6uARpNPK352aEj82SLCtG3H_5PE5yfVKsLiiPVninLljxCXeDyQ--kDdSknw4cTod6oCJAVB2spzdNwDMlzVOhK-lxXU3m60">
+<div class="absolute inset-0 bg-gradient-to-l from-deep-charcoal/80 via-deep-charcoal/40 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-white">
+<div class="max-w-2xl">
+<span class="inline-block bg-spring-mist/20 backdrop-blur-md px-4 py-1 rounded-full text-primary-fixed font-label-md mb-6">
+                        קורס אקדמי שנתי
+                    </span>
+<h1 class="font-display-lg-mobile md:font-display-lg mb-6 leading-tight">
+                        מכיבוש לפיוס
+                    </h1>
+<p class="font-body-lg text-surface-variant mb-10 max-w-xl">
+                        קורס בסגנון אקדמי המעניק כלים לניתוח ושינוי המציאות בסכסוך הישראלי-פלסטיני. נצלול לעומק המורכבות ונחפש נתיבים לתיקון ופיוס.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary hover:bg-on-primary-container text-white px-8 py-4 rounded-lg font-label-md transition-all shadow-lg flex items-center gap-2">
+<span>הרשמה לקורס</span>
+<span class="material-symbols-outlined text-base">arrow_back</span>
+</button>
+<button class="border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-lg font-label-md transition-all backdrop-blur-sm">
+                            סילבוס מלא
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Course Overview Bento Grid -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-primary mb-4">סקירת הקורס</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Logistics -->
+<div class="md:col-span-4 bg-spring-mist p-8 rounded-xl border border-outline-variant flex flex-col justify-between bento-card">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">calendar_today</span>
+<h3 class="font-headline-md text-primary mb-4">מתי ואיפה?</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            13 מפגשים מעמיקים, פעם בשבוע.
+                            <br><br>
+                            מפגשי ערב בני 3 שעות (18:00-21:00) המשלבים הרצאה, דיון וסדנה.
+                        </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 mt-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-label-md text-primary font-bold">מרכז תל אביב</span>
+</div>
+</div>
+<!-- Academic Depth -->
+<div class="md:col-span-8 bg-white p-8 rounded-xl border border-outline-variant flex flex-col justify-center relative overflow-hidden bento-card">
+<div class="relative z-10">
+<h3 class="font-headline-lg text-primary mb-6">עומק אקדמי וכלים מקצועיים</h3>
+<p class="font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                            הקורס בנוי כסמינר אקדמי המשלב ידע תיאורטי נרחב עם יישום מעשי. אנו מאמינים כי שינוי המציאות דורש הבנה עמוקה של השורשים ההיסטוריים, המשפטיים והסוציולוגיים המזינים את הסכסוך.
+                        </p>
+<div class="grid grid-cols-2 gap-8 mt-10">
+<div class="flex items-start gap-4">
+<div class="w-2 h-2 rounded-full bg-primary mt-2"></div>
+<p class="font-label-md text-on-surface-variant">ניתוח טקסטים ומקורות</p>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-2 h-2 rounded-full bg-primary mt-2"></div>
+<p class="font-label-md text-on-surface-variant">מרצים מובילים מהאקדמיה</p>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-2 h-2 rounded-full bg-primary mt-2"></div>
+<p class="font-label-md text-on-surface-variant">מתודולוגיות מחקר ביקורתיות</p>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-2 h-2 rounded-full bg-primary mt-2"></div>
+<p class="font-label-md text-on-surface-variant">פיתוח חשיבה אסטרטגית</p>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-12 -left-12 w-48 h-48 bg-spring-mist rounded-full opacity-50"></div>
+</div>
+<!-- Reconciliation Highlight -->
+<div class="md:col-span-12 bg-primary text-on-primary p-12 rounded-xl flex flex-col md:flex-row items-center gap-8 bento-card">
+<div class="flex-1">
+<h3 class="font-headline-lg mb-4">מעבר למילים: כלים לפיוס</h3>
+<p class="font-body-md opacity-90 leading-relaxed">
+                            הקורס אינו מסתפק רק בניתוח הבעיה, אלא חותר להבנת המנגנונים המאפשרים פיוס ובניית עתיד משותף. נלמד על מודלים של "צדק מאחה" ודרכים לשינוי תודעתי במרחב הסכסוך.
+                        </p>
+</div>
+<div class="w-full md:w-auto">
+<button class="bg-white text-primary px-8 py-4 rounded-lg font-label-md hover:bg-spring-mist transition-all w-full md:w-auto">
+                            למידע על הסגל
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Syllabus Section -->
+<section class="bg-surface-container py-section-gap overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-primary mb-4">תכנית הלימודים</h2>
+<p class="font-body-md text-on-surface-variant">מבנה הקורס מחולק לארבעה צירים מרכזיים המעניקים מעטפת הוליסטית להבנת הסכסוך.</p>
+</div>
+<div class="font-label-md text-primary font-bold flex items-center gap-2">
+<span>סך הכל 39 שעות לימוד</span>
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Unit 1 -->
+<div class="bg-white p-6 rounded-lg border border-outline-variant hover:border-primary transition-all group">
+<div class="text-primary font-headline-md mb-4 opacity-30 group-hover:opacity-100 transition-opacity">01</div>
+<h4 class="font-headline-md text-primary mb-3">ניתוח היסטורי</h4>
+<p class="font-body-md text-on-surface-variant">בחינת נקודות המפנה בהיסטוריה של המרחב והבנת הנרטיבים המכוננים של שני הצדדים.</p>
+</div>
+<!-- Unit 2 -->
+<div class="bg-white p-6 rounded-lg border border-outline-variant hover:border-primary transition-all group">
+<div class="text-primary font-headline-md mb-4 opacity-30 group-hover:opacity-100 transition-opacity">02</div>
+<h4 class="font-headline-md text-primary mb-3">מסגרות משפטיות</h4>
+<p class="font-body-md text-on-surface-variant">החוק הבינלאומי, משפט צבאי ומושגי ריבונות אל מול מציאות של שליטה וכיבוש.</p>
+</div>
+<!-- Unit 3 -->
+<div class="bg-white p-6 rounded-lg border border-outline-variant hover:border-primary transition-all group">
+<div class="text-primary font-headline-md mb-4 opacity-30 group-hover:opacity-100 transition-opacity">03</div>
+<h4 class="font-headline-md text-primary mb-3">סוציולוגיה של סכסוך</h4>
+<p class="font-body-md text-on-surface-variant">השפעת הסכסוך על החברה הישראלית והפלסטינית: זהות, פחד, והבניית ה"אחר".</p>
+</div>
+<!-- Unit 4 -->
+<div class="bg-white p-6 rounded-lg border border-outline-variant hover:border-primary transition-all group">
+<div class="text-primary font-headline-md mb-4 opacity-30 group-hover:opacity-100 transition-opacity">04</div>
+<h4 class="font-headline-md text-primary mb-3">כלים לפיוס</h4>
+<p class="font-body-md text-on-surface-variant">ארגז כלים ליוזמות של שינוי מציאות, דיאלוג ביקורתי ובניית תשתיות לשלום וצדק.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="bg-soft-cream border-2 border-primary/20 rounded-3xl p-12 md:p-20 relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-display-lg-mobile md:font-headline-lg text-primary mb-6">מוכנים לצלול לעומק?</h2>
+<p class="font-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                        הצטרפו לקבוצה של לומדים ופעילים המבקשים להבין את המציאות כדי לשנות אותה. מספר המקומות מוגבל על מנת לשמור על שיח אינטימי ומקצועי.
+                    </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-lg font-headline-md hover:scale-105 transition-transform shadow-xl">
+                            הרשמה לקורס
+                        </button>
+<button class="border-2 border-primary text-primary px-12 py-5 rounded-lg font-headline-md hover:bg-primary/5 transition-colors">
+                            קביעת שיחת ייעוץ
+                        </button>
+</div>
+<p class="font-caption text-on-surface-variant mt-8 italic">
+                        * ניתן לקבל הכרה לגמול השתלמות בכפוף לאישור המשרד הרלוונטי.
+                    </p>
+</div>
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[200px]">diversity_3</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-container dark:bg-on-secondary-container mt-section-gap">
+<div class="flex flex-col md:flex-row-reverse justify-between items-center w-full px-margin-desktop py-gutter gap-base max-w-container-max mx-auto">
+<div class="flex gap-gutter items-center">
+<img alt="מדרשת דרור" class="h-6 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbuowwGwHY3yfDYJZkjrqgc4BcThoB-FVmRw438g9TSqb3kDFe9kzP8pySb0RZK42uVQHGBfAyZ4KUSn8s1Xjy_SGULfJp0gegHdtnMoC_3LtV6-ccZ9DJm2JAWfvMApG05LmsR9qkeiFNXg2nvVQiGj5U-vkSWHA51I2ayzTP5uyZaqXEuJDhDtb231g1U29ugTj-adyd3XgpuaoTjHq4x3M4r5WrbZFV5-3gskHhCk1CJG4vVE3oSt4lDUro9QTZyf2ccdg7gk63">
+</div>
+<div class="flex gap-gutter font-body-md text-body-md text-on-secondary-container">
+<a class="hover:text-warm-wood transition-colors" href="https://www.facebook.com/profile.php?id=61557330713450">פייסבוק</a>
+<a class="hover:text-warm-wood transition-colors" href="https://www.instagram.com/midreshetdror/">אינסטגרם</a>
+<a class="hover:text-warm-wood transition-colors" href="#">תנאי שימוש</a>
+<a class="hover:text-warm-wood transition-colors" href="#">מדיניות פרטיות</a>
+</div>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-80 text-center md:text-right">
+                © 2024 מדרשת דרור. כל הזכויות שמורות. בשיתוף לוחמים לשלום ושוברים שתיקה.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple intersection observer for reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(card);
+        });
+    </script>
+</body></html>
