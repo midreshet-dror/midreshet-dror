@@ -2,6 +2,8 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>מכיבוש לפיוס | מדרשת דרור</title>
+<link rel="icon" type="image/png" href="logo_circle.png">
+<link rel="apple-touch-icon" href="logo_circle.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -126,8 +128,8 @@
 <!-- Top Navigation Bar -->
 <header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
 <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-container-max mx-auto flex-row">
-<div class="flex items-center gap-base"><img alt="מדרשת דרור לוגו" class="h-12 w-auto" src="logo_circle.png">
-<span class="text-primary font-headline-md text-headline-md">מדרשת דרור</span></div>
+<a href="index.html" class="flex items-center gap-base" aria-label="מדרשת דרור - דף הבית"><img alt="מדרשת דרור לוגו" class="h-12 w-auto" src="logo_circle.png">
+<span class="text-primary font-headline-md text-headline-md">מדרשת דרור</span></a>
 <nav class="hidden md:flex gap-gutter items-center">
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">דף הבית</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="about.html">אודות</a>
@@ -173,7 +175,7 @@
 <span class="inline-block bg-spring-mist/20 backdrop-blur-md px-4 py-1 rounded-full text-primary-fixed font-label-md mb-6">
                         קורס אקדמי שנתי
                     </span>
-<h1 class="font-display-lg-mobile md:font-display-lg mb-6 leading-tight">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
                         מכיבוש לפיוס
                     </h1>
 <p class="font-body-lg text-surface-variant mb-10 max-w-xl">
@@ -191,10 +193,56 @@
 </div>
 </div>
 </section>
+<!-- Intro -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-3xl mx-auto text-center">
+<p class="font-headline-md text-headline-md text-primary leading-relaxed mb-8">מה ההשפעות של הכיבוש ארוך השנים על הפלסטינים שחיים תחתיו? מה המהלכים ההיסטוריים שהביאו אותנו עד כאן? האם יכול להיות פה אחרת ואיך?</p>
+<div class="w-20 h-1 bg-warm-wood mx-auto rounded-full mb-8"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">בקורס המבוא המעמיק "מכיבוש לפיוס" נכיר את הכיבוש מכל ההיבטים: פוליטי, היסטורי, משפטי, סוציולוגי ופסיכולוגי, נפגוש מרצות ומרצים מובילים בתחומם, נתרשם בעצמנו מהמציאות בשטח, נשאל שאלות, ונצא עם תמונה עשירה, מעמיקה ומקיפה על מה שקורה כאן, שתחזק אותנו בדרך ליצירת מציאות טובה יותר.</p>
+</div>
+</section>
+<!-- Program structure -->
+<section class="bg-spring-mist py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">מבנה התכנית</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-6 rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">school</span>
+<h3 class="font-bold text-on-surface mb-2">מה בקורס?</h3>
+<p class="text-on-surface-variant leading-relaxed">10 הרצאות ו-3 סיורי שטח</p>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">calendar_month</span>
+<h3 class="font-bold text-on-surface mb-2">מתי?</h3>
+<p class="text-on-surface-variant leading-relaxed">אחת לשבוע בימי שלישי, בין התאריכים <bdi dir="ltr" class="whitespace-nowrap">12/10/26 - 18/01/27</bdi>, בשעות <bdi dir="ltr" class="whitespace-nowrap">18:00 - 21:00</bdi></p>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">location_on</span>
+<h3 class="font-bold text-on-surface mb-2">מיקום</h3>
+<p class="text-on-surface-variant leading-relaxed">מכון ון ליר, ירושלים</p>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">directions_bus</span>
+<h3 class="font-bold text-on-surface mb-2">סיורים</h3>
+<p class="text-on-surface-variant leading-relaxed">הסיורים יתקיימו בימי שישי ויכללו הסעות.</p>
+</div>
+</div>
+<div class="mt-6 bg-white p-6 md:p-8 rounded-xl border border-outline-variant flex flex-col sm:flex-row gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">payments</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">עלות</h3>
+<p class="text-on-surface-variant leading-relaxed">הקורס מסובסד בחלקו ועלות ההשתתפות בו היא 1,500 ש"ח, שמיועדים לכיסוי שכר המרצים/ות, הסיורים וההסעות, הכיבוד ותפעול הקורס. אך כמובן שבכוונתנו לאפשר לכל מי שמעוניין.ת להשתתף, גם אם אין באפשרותה/ו לשלם את הסכום הזה. אנא עדכנו אותנו בכל מקרה ונמצא פתרון יחד :)</p>
+</div>
+</div>
+</div>
+</section>
 <!-- Course Overview Bento Grid -->
 <section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="text-center mb-16">
-<h2 class="font-headline-lg text-primary mb-4">סקירת הקורס</h2>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">סקירת הקורס</h2>
 <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
@@ -206,12 +254,12 @@
 <p class="font-body-md text-on-surface-variant leading-relaxed">
                             13 מפגשים מעמיקים, פעם בשבוע.
                             <br><br>
-                            מפגשי ערב בני 3 שעות (18:00-21:00) המשלבים הרצאה, דיון וסדנה.
+                            מפגשי ערב בני 3 שעות (<bdi dir="ltr">18:00 - 21:00</bdi>) המשלבים הרצאה, דיון וסדנה.
                         </p>
 </div>
 <div class="pt-6 border-t border-outline-variant/30 mt-6 flex items-center gap-3">
 <span class="material-symbols-outlined text-primary">location_on</span>
-<span class="font-label-md text-primary font-bold">מרכז תל אביב</span>
+<span class="font-label-md text-primary font-bold">מכון ון ליר, ירושלים</span>
 </div>
 </div>
 <!-- Academic Depth -->
@@ -263,7 +311,7 @@
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
 <div class="max-w-xl">
-<h2 class="font-headline-lg text-primary mb-4">תכנית הלימודים</h2>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">תכנית הלימודים</h2>
 <p class="font-body-md text-on-surface-variant">מבנה הקורס מחולק לארבעה צירים מרכזיים המעניקים מעטפת הוליסטית להבנת הסכסוך.</p>
 </div>
 <div class="font-label-md text-primary font-bold flex items-center gap-2">
@@ -299,11 +347,31 @@
 </div>
 </div>
 </section>
+<!-- FAQ -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-10 text-center">שאלות ותשובות</h2>
+<div class="space-y-3">
+<details class="group bg-white rounded-xl border border-outline-variant">
+<summary class="flex justify-between items-center gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden p-5 font-bold text-on-surface text-body-lg">היכן הקורס?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+<div class="px-5 pb-5 text-on-surface-variant leading-relaxed"><p>מכון ון ליר בירושלים.</p></div>
+</details>
+<details class="group bg-white rounded-xl border border-outline-variant">
+<summary class="flex justify-between items-center gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden p-5 font-bold text-on-surface text-body-lg">לאיזה גילאים זה?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+<div class="px-5 pb-5 text-on-surface-variant leading-relaxed"><p>לכל הגילאים, מגיל 18 ועד 99.</p></div>
+</details>
+<details class="group bg-white rounded-xl border border-outline-variant">
+<summary class="flex justify-between items-center gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden p-5 font-bold text-on-surface text-body-lg">מה גודל הקבוצה?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+<div class="px-5 pb-5 text-on-surface-variant leading-relaxed"><p>אנחנו משתדלים שהקבוצה תהיה בין 15 ל-25 משתתפים.</p></div>
+</details>
+</div>
+</div>
+</section>
 <!-- Final CTA Section -->
 <section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
 <div class="bg-soft-cream border-2 border-primary/20 rounded-3xl p-12 md:p-20 relative overflow-hidden">
 <div class="relative z-10">
-<h2 class="font-display-lg-mobile md:font-headline-lg text-primary mb-6">מוכנים לצלול לעומק?</h2>
+<h2 class="font-display-lg-mobile md:font-headline-lg text-headline-lg md:text-display-lg-mobile text-primary mb-6">מוכנים לצלול לעומק?</h2>
 <p class="font-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
                         הצטרפו לקבוצה של לומדים ופעילים המבקשים להבין את המציאות כדי לשנות אותה. מספר המקומות מוגבל על מנת לשמור על שיח אינטימי ומקצועי.
                     </p>
