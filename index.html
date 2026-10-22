@@ -123,7 +123,7 @@
 <body class="font-body-md overflow-x-hidden">
 <!-- Header (TopNavBar) -->
 <header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
-<div class="flex justify-between items-center w-full px-margin-desktop py-base max-w-container-max mx-auto flex-row">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-container-max mx-auto flex-row">
 <div class="flex items-center gap-base"><img alt="מדרשת דרור לוגו" class="h-12 w-auto" src="logo_circle.png">
 
 <span class="text-primary font-headline-md text-headline-md">מדרשת דרור</span></div>
@@ -145,6 +145,18 @@
 </div>
 
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#contact">צור קשר</a>
+</nav>
+<button id="mobile-menu-btn" type="button" class="md:hidden p-2 -m-2 text-primary rounded-md" aria-label="תפריט" aria-expanded="false" aria-controls="mobile-menu"><span class="material-symbols-outlined text-3xl leading-none">menu</span></button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant bg-surface shadow-lg">
+<nav class="flex flex-col px-margin-mobile py-2 font-label-md text-label-md">
+<a class="py-3 text-on-surface hover:text-primary" href="index.html">דף הבית</a>
+<a class="py-3 text-on-surface hover:text-primary border-t border-outline-variant/30" href="about.html">אודות</a>
+<span class="pt-3 pb-1 text-caption text-on-surface-variant border-t border-outline-variant/30">סמינרים</span>
+<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="autumn-seminar.html">סמינר סתיו (ארוך)</a>
+<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="spring-seminar.html">סמינר אביב (קצר)</a>
+<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="reconciliation.html">קורס מבוא מכיבוש לפיוס</a>
+<a class="py-3 text-on-surface hover:text-primary border-t border-outline-variant/30" href="index.html#contact">צור קשר</a>
 </nav>
 </div>
 </header>
@@ -395,4 +407,24 @@
 
 
 
+<script>
+// Mobile menu: toggle the panel, mark the current page, close after picking a link
+(function () {
+  var btn = document.getElementById('mobile-menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  if (!btn || !menu) return;
+  var icon = btn.querySelector('span');
+  function setOpen(open) {
+    menu.classList.toggle('hidden', !open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    icon.textContent = open ? 'close' : 'menu';
+  }
+  btn.addEventListener('click', function () { setOpen(menu.classList.contains('hidden')); });
+  var page = location.pathname.split('/').pop() || 'index.html';
+  menu.querySelectorAll('a').forEach(function (a) {
+    if (a.getAttribute('href') === page) a.classList.add('text-primary', 'font-bold');
+    a.addEventListener('click', function () { setOpen(false); });
+  });
+})();
+</script>
 </body></html>
