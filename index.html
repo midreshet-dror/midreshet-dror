@@ -350,27 +350,57 @@
 </div>
 </div>
 <div class="md:w-1/2 bg-white p-gutter md:p-12 rounded-3xl shadow-sm border border-outline-variant">
-<form class="space-y-gutter">
+<!-- Submissions are emailed to the midrasha via FormSubmit (formsubmit.co) -->
+<form class="space-y-gutter" action="https://formsubmit.co/info@midreshet-dror.com" method="POST">
+<input type="hidden" name="_subject" value="הודעה חדשה מאתר מדרשת דרור">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://midreshet-dror.github.io/midreshet-dror/index.html?sent=1#contact">
+<input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div id="form-sent" class="hidden flex items-center gap-3 bg-spring-mist border border-primary/30 text-primary rounded-md p-4" role="status">
+<span class="material-symbols-outlined">check_circle</span>
+<span class="font-bold">תודה! ההודעה נשלחה ונחזור אליכן.ם בהקדם.</span>
+</div>
 <div class="grid grid-cols-2 gap-gutter">
 <div class="space-y-2">
-<label class="block text-right font-label-md">שם פרטי</label>
-<input class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
+<label class="block text-right font-label-md" for="f-first">שם פרטי</label>
+<input id="f-first" name="שם פרטי" autocomplete="given-name" required class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
 </div>
 <div class="space-y-2">
-<label class="block text-right font-label-md">שם משפחה</label>
-<input class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
+<label class="block text-right font-label-md" for="f-last">שם משפחה</label>
+<input id="f-last" name="שם משפחה" autocomplete="family-name" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
 </div>
 </div>
 <div class="space-y-2">
-<label class="block text-right font-label-md">אימייל</label>
-<input class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="email">
+<label class="block text-right font-label-md" for="f-email">אימייל</label>
+<input id="f-email" name="email" autocomplete="email" required class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="email" dir="ltr">
 </div>
 <div class="space-y-2">
-<label class="block text-right font-label-md">תוכן ההודעה</label>
-<textarea class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" rows="4"></textarea>
+<label class="block text-right font-label-md" for="f-phone">מספר טלפון</label>
+<input id="f-phone" name="טלפון" autocomplete="tel" inputmode="tel" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none text-right" type="tel" dir="ltr">
+</div>
+<div class="space-y-2">
+<label class="block text-right font-label-md" for="f-topic">במה אתם מתעניינים?</label>
+<select id="f-topic" name="נושא" required class="w-full bg-soft-cream border border-outline-variant rounded-md py-3 pr-3 pl-10 [background-position:left_0.75rem_center] focus:ring-2 focus:ring-primary focus:outline-none">
+<option value="" disabled selected>בחרו אפשרות</option>
+<option>סמינר סתיו ארוך, לגילאי 19-27</option>
+<option>סמינרי אביב מקוצרים, לגילאי 20-30</option>
+<option>קורס מבוא מכיבוש לפיוס, לגילאי 18-99</option>
+<option>סמינר נוער, לכיתות ט' עד יב'</option>
+<option>כללי</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-right font-label-md" for="f-message">תוכן ההודעה</label>
+<textarea id="f-message" name="הודעה" required class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" rows="4"></textarea>
 </div>
 <button class="w-full bg-primary text-on-primary py-4 rounded-md font-headline-md hover:bg-opacity-90 transition-all" type="submit">שלחו הודעה</button>
 </form>
+<script>
+// Show a thank-you note after FormSubmit redirects back here
+if (new URLSearchParams(location.search).get('sent') === '1') {
+  document.getElementById('form-sent').classList.remove('hidden');
+}
+</script>
 </div>
 </div>
 </section>
@@ -378,18 +408,13 @@
 <!-- Footer -->
 <footer class="bg-secondary-container dark:bg-on-secondary-container mt-section-gap">
 <div class="flex flex-col md:flex-row-reverse justify-between items-center w-full px-margin-desktop py-gutter gap-base max-w-container-max mx-auto">
-<div class="flex gap-gutter items-center">
-<img alt="מדרשת דרור" class="h-6 w-auto" src="logo_circle.png">
-</div>
 <div class="flex items-center gap-gutter font-body-md text-body-md text-on-secondary-container">
 <a class="hover:text-warm-wood transition-colors" href="https://www.facebook.com/profile.php?id=61557330713450" target="_blank" rel="noopener" aria-label="פייסבוק" title="פייסבוק"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
 <a class="hover:text-warm-wood transition-colors" href="https://www.instagram.com/midreshetdror/" target="_blank" rel="noopener" aria-label="אינסטגרם" title="אינסטגרם"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
 <a class="hover:text-warm-wood transition-colors" href="https://wa.me/972523640090" target="_blank" rel="noopener" aria-label="וואטסאפ 052-3640090" title="וואטסאפ 052-3640090"><svg class="w-7 h-7" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M8.6 7.1c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2.1.4 0 .5l-.4.6c-.1.2-.2.3 0 .5.3.6.8 1.2 1.4 1.7.7.6 1.2.8 1.5.9.2.1.3.1.4-.1l.6-.8c.1-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.2.1.8-.2 1.3-.2.5-1.2 1.1-1.7 1.1-.4.1-1 .2-3.2-.9-2.6-1.2-4.1-3.8-4.2-4-.1-.2-.9-1.2-.9-2.4 0-1.1.5-1.6.8-1.9Z" fill="currentColor"/></svg></a>
 <a class="hover:text-warm-wood transition-colors" href="#">מדיניות פרטיות</a>
 </div>
-<p class="font-body-md text-body-md text-on-secondary-container opacity-80 text-center md:text-right">
-                © 2026 מדרשת דרור. כל הזכויות שמורות. בשיתוף לוחמים לשלום ושוברים שתיקה.
-            </p>
+<div class="flex items-center gap-3 font-body-md text-body-md text-on-secondary-container"><a href="index.html" class="shrink-0" aria-label="מדרשת דרור - דף הבית" title="דף הבית"><img alt="מדרשת דרור" class="h-12 w-auto" src="logo_circle.png"></a><span class="opacity-80">© 2026 מדרשת דרור</span></div>
 </div>
 </footer>
 <script>
