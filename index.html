@@ -367,7 +367,7 @@
 </div>
 <div class="space-y-2">
 <label class="block text-right font-label-md" for="f-last">שם משפחה</label>
-<input id="f-last" name="שם משפחה" autocomplete="family-name" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
+<input id="f-last" name="שם משפחה" autocomplete="family-name" required class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
 </div>
 </div>
 <div class="space-y-2">
@@ -376,7 +376,7 @@
 </div>
 <div class="space-y-2">
 <label class="block text-right font-label-md" for="f-phone">מספר טלפון</label>
-<input id="f-phone" name="טלפון" autocomplete="tel" inputmode="tel" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none text-right" type="tel" dir="ltr">
+<input id="f-phone" name="טלפון" autocomplete="tel" inputmode="tel" required pattern="[0-9+\-\s]{9,20}" title="מספר טלפון, למשל 050-1234567" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none text-right" type="tel" dir="ltr">
 </div>
 <div class="space-y-2">
 <label class="block text-right font-label-md" for="f-topic">במה אתם מתעניינים?</label>
