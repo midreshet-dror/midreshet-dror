@@ -396,6 +396,23 @@
 <button class="w-full bg-primary text-on-primary py-4 rounded-md font-headline-md hover:bg-opacity-90 transition-all" type="submit">שלחו הודעה</button>
 </form>
 <script>
+// Coming from a spring-round sign-up button (?round=a / ?round=b): preselect the topic and prefill the message
+(function () {
+  var rounds = {
+    a: "סבב א' (11–13.2, 18–20.2, 4–6.3)",
+    b: "סבב ב' (25–27.3, 1–3.4, 15–17.4)"
+  };
+  var round = rounds[new URLSearchParams(location.search).get('round')];
+  if (!round) return;
+  var topic = document.getElementById('f-topic');
+  for (var i = 0; i < topic.options.length; i++) {
+    if (topic.options[i].text.indexOf('סמינרי אביב') === 0) topic.selectedIndex = i;
+  }
+  var msg = document.getElementById('f-message');
+  if (!msg.value) msg.value = 'אני רוצה להירשם לסמינר אביב, ' + round + '.\n';
+})();
+</script>
+<script>
 // Show a thank-you note after FormSubmit redirects back here
 if (new URLSearchParams(location.search).get('sent') === '1') {
   document.getElementById('form-sent').classList.remove('hidden');
