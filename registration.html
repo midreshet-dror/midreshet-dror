@@ -1,0 +1,370 @@
+<!DOCTYPE html><html dir="rtl" lang="he"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>הרשמה לסמינרים | מדרשת דרור</title>
+<link rel="icon" type="image/png" href="logo_circle.png">
+<link rel="apple-touch-icon" href="logo_circle.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#39684b",
+                    "on-secondary-fixed": "#241a0e",
+                    "outline-variant": "#c1c9c0",
+                    "secondary": "#6b5c4c",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#215034",
+                    "on-tertiary-fixed": "#231a0e",
+                    "background": "#faf9f6",
+                    "spring-mist": "#F6FFEB",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e3e2e0",
+                    "on-surface": "#1a1c1a",
+                    "tertiary-fixed-dim": "#d5c4b1",
+                    "surface-bright": "#faf9f6",
+                    "surface-container-high": "#e9e8e5",
+                    "secondary-fixed": "#f4dfcb",
+                    "secondary-fixed-dim": "#d7c3b0",
+                    "surface-dim": "#dbdad7",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#514537",
+                    "on-tertiary-container": "#514537",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#e3e2e0",
+                    "inverse-primary": "#a0d2ae",
+                    "surface-container-low": "#f4f3f1",
+                    "primary-fixed": "#bbefc9",
+                    "primary": "#39684b",
+                    "primary-container": "#8fc19e",
+                    "deep-charcoal": "#122023",
+                    "outline": "#717972",
+                    "on-primary-fixed": "#002110",
+                    "on-background": "#1a1c1a",
+                    "on-error": "#ffffff",
+                    "tertiary": "#695c4d",
+                    "surface-container-lowest": "#ffffff",
+                    "warm-wood": "#8B5E3C",
+                    "inverse-surface": "#2f312f",
+                    "inverse-on-surface": "#f2f1ee",
+                    "secondary-container": "#f4dfcb",
+                    "on-primary-fixed-variant": "#205034",
+                    "soft-cream": "#FFFDF5",
+                    "tertiary-fixed": "#f2e0cc",
+                    "primary-fixed-dim": "#a0d2ae",
+                    "surface": "#faf9f6",
+                    "on-surface-variant": "#414942",
+                    "on-secondary-fixed-variant": "#524436",
+                    "on-secondary-container": "#716252",
+                    "surface-container": "#efeeeb",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#c4b3a1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "48px",
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "container-max": "1200px",
+                    "section-gap": "80px"
+            },
+            "fontFamily": {
+                    "sans": ["Heebo", "sans-serif"],
+                    "label-md": ["Heebo", "sans-serif"],
+                    "headline-md": ["Heebo", "sans-serif"],
+                    "headline-lg": ["Heebo", "sans-serif"],
+                    "display-lg": ["Heebo", "sans-serif"],
+                    "caption": ["Heebo", "sans-serif"],
+                    "display-lg-mobile": ["Heebo", "sans-serif"],
+                    "body-md": ["Heebo", "sans-serif"],
+                    "body-lg": ["Heebo", "sans-serif"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #faf9f6;
+            color: #1a1c1a;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-card {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .tonal-card:hover {
+            background-color: #F6FFEB;
+            transform: translateY(-4px);
+        }
+        .rtl-mirror {
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar Component -->
+<header class="bg-surface w-full z-50 border-b border-outline-variant/30 sticky"><div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-container-max mx-auto flex-row"><a href="index.html" class="flex items-center gap-base" aria-label="מדרשת דרור - דף הבית"><img alt="מדרשת דרור לוגו" class="h-12 w-auto" src="logo_circle.png"><span class="text-primary font-headline-md text-headline-md">מדרשת דרור</span></a><nav class="hidden md:flex gap-gutter items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">דף הבית</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="about.html">אודות</a>
+
+<!-- סמינרים Dropdown Menu -->
+<div class="relative group">
+<button class="text-on-surface-variant group-hover:text-primary transition-colors font-label-md text-label-md flex items-center gap-1 py-1 focus:outline-none cursor-pointer">
+<span>סמינרים</span>
+<span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+</button>
+<div class="absolute right-0 top-full mt-1 w-60 bg-surface border border-outline-variant rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<a class="block px-4 py-2.5 text-on-surface hover:bg-secondary-container hover:text-primary transition-colors font-medium text-sm" href="autumn-seminar.html">סמינר סתיו (ארוך)</a>
+<a class="block px-4 py-2.5 text-on-surface hover:bg-secondary-container hover:text-primary transition-colors font-medium text-sm border-t border-outline-variant/30" href="spring-seminar.html">סמינר אביב (קצר)</a>
+<a class="block px-4 py-2.5 text-on-surface hover:bg-secondary-container hover:text-primary transition-colors font-medium text-sm border-t border-outline-variant/30" href="youth-seminar.html">סמינר נוער</a>
+<a class="block px-4 py-2.5 text-on-surface hover:bg-secondary-container hover:text-primary transition-colors font-medium text-sm border-t border-outline-variant/30" href="reconciliation.html">קורס מבוא מכיבוש לפיוס</a>
+</div>
+</div>
+
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#contact">צור קשר</a>
+</nav>
+<button id="mobile-menu-btn" type="button" class="md:hidden p-2 -m-2 text-primary rounded-md" aria-label="תפריט" aria-expanded="false" aria-controls="mobile-menu"><span class="material-symbols-outlined text-3xl leading-none">menu</span></button></div><div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant bg-surface shadow-lg">
+<nav class="flex flex-col px-margin-mobile py-2 font-label-md text-label-md">
+<a class="py-3 text-on-surface hover:text-primary" href="index.html">דף הבית</a>
+<a class="py-3 text-on-surface hover:text-primary border-t border-outline-variant/30" href="about.html">אודות</a>
+<span class="pt-3 pb-1 text-caption text-on-surface-variant border-t border-outline-variant/30">סמינרים</span>
+<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="autumn-seminar.html">סמינר סתיו (ארוך)</a>
+<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="spring-seminar.html">סמינר אביב (קצר)</a>
+<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="youth-seminar.html">סמינר נוער</a>
+<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="reconciliation.html">קורס מבוא מכיבוש לפיוס</a>
+<a class="py-3 text-on-surface hover:text-primary border-t border-outline-variant/30" href="index.html#contact">צור קשר</a>
+</nav>
+</div>
+</header>
+<main class="">
+<section class="bg-spring-mist border-b border-primary/10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-16 text-center">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-3">הרשמה לסמינרים</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">בחרו את הסמינר שמעניין אתכם ומלאו את הפרטים. נחזור אליכם בהקדם עם כל המידע.</p>
+</div>
+</section>
+<section class="px-margin-mobile md:px-margin-desktop py-12 md:py-16">
+<div class="max-w-2xl mx-auto bg-white border border-outline-variant/40 rounded-2xl shadow-sm p-6 md:p-10">
+<form id="reg-form" class="space-y-6" novalidate>
+<!-- people never see or fill this; bots usually do -->
+<div class="hidden" aria-hidden="true"><label>אתר<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+<div class="space-y-2">
+<label for="r-seminar" class="block font-label-md font-bold">לאיזה סמינר תרצו להירשם? <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<select id="r-seminar" name="seminar" required class="w-full bg-soft-cream border border-outline-variant rounded-md py-3 pr-3 pl-10 [background-position:left_0.75rem_center] focus:ring-2 focus:ring-primary focus:outline-none">
+<option value="" disabled selected>בחרו סמינר</option>
+<option value="autumn">סמינר סתיו ארוך, לגילאי 19-27</option>
+<option value="spring">סמינר אביב מקוצר, לגילאי 20-30</option>
+<option value="intro">קורס מבוא מכיבוש לפיוס, לגילאי 18-99</option>
+<option value="youth">סמינר נוער, לכיתות ט' עד יב'</option>
+</select>
+</div>
+
+<fieldset id="round-field" class="hidden space-y-3">
+<legend class="font-label-md font-bold mb-2">באיזה סבב? <span class="text-warm-wood" aria-hidden="true">*</span></legend>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<label class="flex items-start gap-3 border border-outline-variant rounded-lg p-4 cursor-pointer has-[:checked]:border-primary has-[:checked]:bg-spring-mist">
+<input type="radio" name="round" value="a" class="mt-1 text-primary focus:ring-primary">
+<span><span class="block font-bold">סבב א'</span><span class="text-sm text-on-surface-variant"><bdi dir="ltr">11–13</bdi> בפברואר, <bdi dir="ltr">18–20</bdi> בפברואר, <bdi dir="ltr">4–6</bdi> במרץ</span></span>
+</label>
+<label class="flex items-start gap-3 border border-outline-variant rounded-lg p-4 cursor-pointer has-[:checked]:border-warm-wood has-[:checked]:bg-soft-cream">
+<input type="radio" name="round" value="b" class="mt-1 text-warm-wood focus:ring-warm-wood">
+<span><span class="block font-bold">סבב ב'</span><span class="text-sm text-on-surface-variant"><bdi dir="ltr">25–27</bdi> במרץ, <bdi dir="ltr">1–3</bdi> באפריל, <bdi dir="ltr">15–17</bdi> באפריל</span></span>
+</label>
+</div>
+</fieldset>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2 md:col-span-2">
+<label for="r-name" class="block font-label-md font-bold">שם מלא <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<input id="r-name" name="full_name" type="text" required autocomplete="name" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none">
+</div>
+<div class="space-y-2">
+<label for="r-phone" class="block font-label-md font-bold">טלפון <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<input id="r-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" dir="ltr" pattern="[0-9+\-\s]{9,15}" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 text-right focus:ring-2 focus:ring-primary focus:outline-none">
+</div>
+<div class="space-y-2">
+<label for="r-email" class="block font-label-md font-bold">מייל <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<input id="r-email" name="email" type="email" required autocomplete="email" dir="ltr" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 text-right focus:ring-2 focus:ring-primary focus:outline-none">
+</div>
+<div class="space-y-2">
+<label for="r-age" class="block font-label-md font-bold">גיל <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<input id="r-age" name="age" type="number" required min="12" max="99" inputmode="numeric" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none">
+</div>
+<div class="space-y-2">
+<label for="r-city" class="block font-label-md font-bold">עיר מגורים</label>
+<input id="r-city" name="city" type="text" autocomplete="address-level2" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none">
+</div>
+</div>
+
+<fieldset id="parent-field" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-outline-variant/40 pt-6">
+<legend class="sr-only">פרטי הורה</legend>
+<p class="md:col-span-2 font-bold text-on-surface">פרטי הורה</p>
+<div class="space-y-2">
+<label for="r-parent-name" class="block font-label-md font-bold">שם הורה <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<input id="r-parent-name" name="parent_name" type="text" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none">
+</div>
+<div class="space-y-2">
+<label for="r-parent-phone" class="block font-label-md font-bold">טלפון הורה <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<input id="r-parent-phone" name="parent_phone" type="tel" inputmode="tel" dir="ltr" pattern="[0-9+\-\s]{9,15}" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 text-right focus:ring-2 focus:ring-primary focus:outline-none">
+</div>
+</fieldset>
+
+<div class="space-y-2">
+<label for="r-heard" class="block font-label-md font-bold">איך שמעתם עלינו?</label>
+<select id="r-heard" name="heard_from" class="w-full bg-soft-cream border border-outline-variant rounded-md py-3 pr-3 pl-10 [background-position:left_0.75rem_center] focus:ring-2 focus:ring-primary focus:outline-none">
+<option value="">בחרו (לא חובה)</option>
+<option>חברים או משפחה</option>
+<option>בוגרי המדרשה</option>
+<option>פייסבוק</option>
+<option>אינסטגרם</option>
+<option>חיפוש בגוגל</option>
+<option>אחר</option>
+</select>
+</div>
+<div class="space-y-2">
+<label for="r-notes" class="block font-label-md font-bold">משהו שחשוב לכם שנדע?</label>
+<textarea id="r-notes" name="notes" rows="3" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none"></textarea>
+</div>
+
+<p id="reg-error" class="hidden rounded-md bg-red-50 border border-red-200 text-red-800 p-3" role="alert"></p>
+<button id="reg-submit" type="submit" class="w-full bg-primary text-white py-4 rounded-md font-headline-md hover:bg-surface-tint transition-colors disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">שליחת הרשמה</button>
+<p class="text-sm text-on-surface-variant text-center">שדות המסומנים ב-<span class="text-warm-wood">*</span> הם שדות חובה</p>
+</form>
+
+<div id="reg-done" class="hidden text-center py-8" role="status" tabindex="-1">
+<span class="material-symbols-outlined text-primary text-6xl" aria-hidden="true">check_circle</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-4 mb-2">תודה, ההרשמה התקבלה!</h2>
+<p class="text-on-surface-variant">נחזור אליכם בהקדם. לשאלות אפשר לכתוב לנו בוואטסאפ <a class="text-primary underline" href="https://wa.me/972523640090" dir="ltr">052-3640090</a>.</p>
+</div>
+</div>
+</section>
+<script>
+// Registration form: show the fields each seminar needs, then send to the Google Apps Script web app
+(function () {
+  // Web app URL from Apps Script (Deploy > Web app). Empty = form not connected yet.
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw2n_pC24Q4w7isHxY5bavsnm0mcxoAKnLjah-p2A0HrnNt0Xd-Ri3TzA3tfyR0BA3j/exec';
+
+  var form = document.getElementById('reg-form');
+  var seminar = document.getElementById('r-seminar');
+  var roundField = document.getElementById('round-field');
+  var parentField = document.getElementById('parent-field');
+  var errorBox = document.getElementById('reg-error');
+  var submit = document.getElementById('reg-submit');
+
+  function update() {
+    var v = seminar.value;
+    roundField.classList.toggle('hidden', v !== 'spring');
+    roundField.querySelectorAll('input').forEach(function (i) { i.required = v === 'spring'; });
+    parentField.classList.toggle('hidden', v !== 'youth');
+    parentField.querySelectorAll('input').forEach(function (i) { i.required = v === 'youth'; });
+  }
+  seminar.addEventListener('change', update);
+
+  // ?seminar=spring&round=a preselects the choice (used by the seminar pages' buttons)
+  var q = new URLSearchParams(location.search);
+  if (q.get('seminar') && seminar.querySelector('option[value="' + q.get('seminar') + '"]')) seminar.value = q.get('seminar');
+  if (q.get('round')) {
+    var r = roundField.querySelector('input[value="' + q.get('round') + '"]');
+    if (r) r.checked = true;
+  }
+  update();
+
+  function showError(msg, el) {
+    errorBox.textContent = msg;
+    errorBox.classList.remove('hidden');
+    if (el) el.focus();
+  }
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    errorBox.classList.add('hidden');
+    if (!form.checkValidity()) {
+      var bad = form.querySelector(':invalid');
+      var label = bad.type === 'radio' ? 'בחירת סבב' : ((form.querySelector('label[for="' + bad.id + '"]') || {}).textContent || '').replace('*', '').trim();
+      showError('יש להשלים או לתקן את השדה: ' + label, bad);
+      return;
+    }
+    if (!SCRIPT_URL) {
+      showError('הטופס עדיין לא מחובר. אפשר לפנות אלינו בינתיים בוואטסאפ 052-3640090.');
+      return;
+    }
+    submit.disabled = true;
+    submit.textContent = 'שולחים...';
+    fetch(SCRIPT_URL, { method: 'POST', body: new URLSearchParams(new FormData(form)) })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (!data.ok) throw new Error(data.error || 'error');
+        form.classList.add('hidden');
+        var done = document.getElementById('reg-done');
+        done.classList.remove('hidden');
+        done.focus();
+      })
+      .catch(function () {
+        submit.disabled = false;
+        submit.textContent = 'שליחת הרשמה';
+        showError('משהו השתבש בשליחה. נסו שוב, או כתבו לנו בוואטסאפ 052-3640090.');
+      });
+  });
+})();
+</script>
+
+</main>
+<!-- Footer Component -->
+<!-- EU partnership -->
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-section-gap flex items-center justify-center gap-3 text-on-surface-variant">
+<svg class="h-8 w-auto rounded-sm" viewBox="0 0 810 540" role="img" aria-label="דגל האיחוד האירופי"><rect width="810" height="540" fill="#003399"/><defs><polygon id="eu-star" fill="#FFCC00" points="0,-30 6.74,-9.27 28.53,-9.27 10.9,3.54 17.63,24.27 0,11.46 -17.63,24.27 -10.9,3.54 -28.53,-9.27 -6.74,-9.27"/></defs><g transform="translate(405 270)"><use href="#eu-star" x="0" y="-180"/><use href="#eu-star" x="90" y="-155.88"/><use href="#eu-star" x="155.88" y="-90"/><use href="#eu-star" x="180" y="0"/><use href="#eu-star" x="155.88" y="90"/><use href="#eu-star" x="90" y="155.88"/><use href="#eu-star" x="0" y="180"/><use href="#eu-star" x="-90" y="155.88"/><use href="#eu-star" x="-155.88" y="90"/><use href="#eu-star" x="-180" y="0"/><use href="#eu-star" x="-155.88" y="-90"/><use href="#eu-star" x="-90" y="-155.88"/></g></svg>
+<span class="text-caption font-caption">בשיתוף האיחוד האירופי</span>
+</div>
+<footer class="bg-secondary-container dark:bg-on-secondary-container mt-section-gap"><div class="flex flex-col md:flex-row-reverse justify-between items-center w-full px-margin-desktop py-gutter gap-base max-w-container-max mx-auto"><div class="flex items-center gap-gutter font-body-md text-body-md text-on-secondary-container">
+<a class="hover:text-warm-wood transition-colors" href="https://www.facebook.com/profile.php?id=61557330713450" target="_blank" rel="noopener" aria-label="פייסבוק" title="פייסבוק"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+<a class="hover:text-warm-wood transition-colors" href="https://www.instagram.com/midreshetdror/" target="_blank" rel="noopener" aria-label="אינסטגרם" title="אינסטגרם"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+<a class="hover:text-warm-wood transition-colors" href="https://wa.me/972523640090" target="_blank" rel="noopener" aria-label="וואטסאפ 052-3640090" title="וואטסאפ 052-3640090"><svg class="w-7 h-7" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M8.6 7.1c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2.1.4 0 .5l-.4.6c-.1.2-.2.3 0 .5.3.6.8 1.2 1.4 1.7.7.6 1.2.8 1.5.9.2.1.3.1.4-.1l.6-.8c.1-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.2.1.8-.2 1.3-.2.5-1.2 1.1-1.7 1.1-.4.1-1 .2-3.2-.9-2.6-1.2-4.1-3.8-4.2-4-.1-.2-.9-1.2-.9-2.4 0-1.1.5-1.6.8-1.9Z" fill="currentColor"/></svg></a>
+<a class="hover:text-warm-wood transition-colors" href="mailto:info@midreshet-dror.com" aria-label="אימייל" title="אימייל"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg></a>
+<a class="hover:text-warm-wood transition-colors" href="#">מדיניות פרטיות</a>
+</div><div class="flex items-center gap-3 font-body-md text-body-md text-on-secondary-container"><a href="index.html" class="shrink-0" aria-label="מדרשת דרור - דף הבית" title="דף הבית"><img alt="מדרשת דרור" class="h-12 w-auto" src="logo_circle.png"></a><span class="opacity-80">© 2026 מדרשת דרור</span></div></div></footer>
+<script>
+// Mobile menu: toggle the panel, mark the current page, close after picking a link
+(function () {
+  var btn = document.getElementById('mobile-menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  if (!btn || !menu) return;
+  var icon = btn.querySelector('span');
+  function setOpen(open) {
+    menu.classList.toggle('hidden', !open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    icon.textContent = open ? 'close' : 'menu';
+  }
+  btn.addEventListener('click', function () { setOpen(menu.classList.contains('hidden')); });
+  var page = location.pathname.split('/').pop() || 'index.html';
+  menu.querySelectorAll('a').forEach(function (a) {
+    if (a.getAttribute('href') === page) a.classList.add('text-primary', 'font-bold');
+    a.addEventListener('click', function () { setOpen(false); });
+  });
+})();
+</script>
+</body></html>
