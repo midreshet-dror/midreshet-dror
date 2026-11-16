@@ -7,20 +7,20 @@
 
   var css = document.createElement('style');
   css.textContent =
-    'dialog.lb{padding:0;border:0;border-radius:16px;width:min(1000px,94vw);max-width:94vw;max-height:92vh;overflow:hidden;background:#faf9f6;box-shadow:0 20px 60px rgba(0,0,0,.35)}' +
+    'dialog.lb{padding:0;border:0;border-radius:22px;width:min(1000px,94vw);max-width:94vw;max-height:92vh;overflow:hidden;background:#ffffff;box-shadow:0 20px 60px rgba(0,0,0,.35)}' +
     'dialog.lb[open]{display:flex;flex-direction:column}' +
-    'dialog.lb::backdrop{background:rgba(20,30,25,.65)}' +
+    'dialog.lb::backdrop{background:rgba(43,49,51,.55)}' +
     '.lb-bar{display:flex;align-items:center;gap:12px;padding:10px 12px 10px 16px;border-bottom:1px solid rgba(0,0,0,.08);background:#fff}' +
-    '.lb-title{flex:1;font-weight:700;font-size:18px;color:#2f4a3c}' +
-    '.lb-open{font-size:14px;color:#2f6b4f;text-decoration:underline;white-space:nowrap}' +
-    '.lb-close{flex:0 0 auto;width:44px;height:44px;border-radius:999px;border:0;background:#eef3ef;color:#2f4a3c;font-size:28px;line-height:1;cursor:pointer}' +
-    '.lb-close:hover{background:#dfe9e2}' +
-    '.lb-close:focus-visible{outline:3px solid #2f6b4f;outline-offset:2px}' +
+    '.lb-title{flex:1;font-weight:700;font-size:18px;color:#2E5442}' +
+    '.lb-open{font-size:14px;color:#4A7A60;text-decoration:underline;white-space:nowrap}' +
+    '.lb-close{flex:0 0 auto;width:44px;height:44px;border-radius:999px;border:0;background:#EEF5F0;color:#2E5442;font-size:28px;line-height:1;cursor:pointer}' +
+    '.lb-close:hover{background:#DCEBE0}' +
+    '.lb-close:focus-visible{outline:3px solid #4A7A60;outline-offset:2px}' +
     '.lb-body{overflow:auto;-webkit-overflow-scrolling:touch}' +
     '.lb-body img{display:block;width:100%;height:auto}' +
     '.lb-body iframe{display:block;width:100%;height:calc(92vh - 66px);border:0;background:#fff}' +
     'html.lb-lock{overflow:hidden}' +
-    '.lb-hint{display:none;padding:6px 16px;font-size:13px;color:#5b6b61;background:#f3f6f3;border-bottom:1px solid rgba(0,0,0,.06)}' +
+    '.lb-hint{display:none;padding:6px 16px;font-size:13px;color:#535B5E;background:#F2F7F7;border-bottom:1px solid rgba(0,0,0,.06)}' +
     // on phones, wide tables are shown bigger and scroll sideways so the text stays readable
     '@media (max-width:700px){dialog.lb.lb-wide .lb-body img{width:900px;max-width:none}dialog.lb.lb-wide .lb-hint{display:block}}';
   document.head.appendChild(css);

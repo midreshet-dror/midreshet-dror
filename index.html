@@ -5,179 +5,60 @@
 <link rel="icon" type="image/png" href="logo_circle.png">
 <link rel="apple-touch-icon" href="logo_circle.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="assets/theme.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&amp;family=Frank+Ruhl+Libre:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "error-container": "#ffdad6",
-                        "surface-container-lowest": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "tertiary-fixed-dim": "#d5c4b1",
-                        "outline-variant": "#c1c9c0",
-                        "background": "#faf9f6",
-                        "secondary": "#6b5c4c",
-                        "secondary-fixed-dim": "#d7c3b0",
-                        "on-tertiary-fixed": "#231a0e",
-                        "deep-charcoal": "#122023",
-                        "secondary-container": "#f4dfcb",
-                        "surface": "#faf9f6",
-                        "surface-dim": "#dbdad7",
-                        "outline": "#717972",
-                        "on-primary-fixed-variant": "#205034",
-                        "on-surface": "#1a1c1a",
-                        "on-error": "#ffffff",
-                        "on-tertiary-fixed-variant": "#514537",
-                        "on-tertiary-container": "#514537",
-                        "soft-cream": "#FFFDF5",
-                        "secondary-fixed": "#f4dfcb",
-                        "inverse-surface": "#2f312f",
-                        "on-secondary-container": "#716252",
-                        "warm-wood": "#8B5E3C",
-                        "on-background": "#1a1c1a",
-                        "on-primary-container": "#215034",
-                        "spring-mist": "#F6FFEB",
-                        "surface-container-highest": "#e3e2e0",
-                        "primary-container": "#8fc19e",
-                        "tertiary-fixed": "#f2e0cc",
-                        "surface-tint": "#39684b",
-                        "primary-fixed": "#bbefc9",
-                        "on-secondary-fixed-variant": "#524436",
-                        "inverse-primary": "#a0d2ae",
-                        "surface-variant": "#e3e2e0",
-                        "surface-container-high": "#e9e8e5",
-                        "tertiary": "#695c4d",
-                        "primary-fixed-dim": "#a0d2ae",
-                        "on-surface-variant": "#414942",
-                        "error": "#ba1a1a",
-                        "on-primary-fixed": "#002110",
-                        "on-primary": "#ffffff",
-                        "surface-container": "#efeeeb",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-fixed": "#241a0e",
-                        "on-secondary": "#ffffff",
-                        "primary": "#39684b",
-                        "inverse-on-surface": "#f2f1ee",
-                        "surface-container-low": "#f4f3f1",
-                        "tertiary-container": "#c4b3a1",
-                        "surface-bright": "#faf9f6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "container-max": "1200px",
-                        "margin-desktop": "48px",
-                        "margin-mobile": "16px",
-                        "base": "8px",
-                        "gutter": "24px",
-                        "section-gap": "80px"
-                    },
-                    "fontFamily": {
-                    "sans": ["Heebo", "sans-serif"],
-                        "headline-md": ["Heebo", "sans-serif"],
-                        "display-lg": ["Heebo", "sans-serif"],
-                        "body-md": ["Heebo", "sans-serif"],
-                        "headline-lg": ["Heebo", "sans-serif"],
-                        "display-lg-mobile": ["Heebo", "sans-serif"],
-                        "label-md": ["Heebo", "sans-serif"],
-                        "caption": ["Heebo", "sans-serif"],
-                        "body-lg": ["Heebo", "sans-serif"]
-                    },
-                    "fontSize": {
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
-                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
-                    }
-                },
-            },
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        body {
-            background-color: #faf9f6;
-            color: #1a1c1a;
-        }
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 24px;
-        }
-        .transition-slow {
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    </style>
+<link rel="stylesheet" href="assets/dror.css">
 </head>
-<body class="font-body-md overflow-x-hidden">
-<!-- Header (TopNavBar) -->
-<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-container-max mx-auto flex-row">
-<a href="index.html" class="flex items-center gap-base" aria-label="מדרשת דרור - דף הבית"><img alt="מדרשת דרור לוגו" class="h-12 w-auto" src="logo_circle.png">
-
-<span class="text-primary font-headline-md text-headline-md">מדרשת דרור</span></a>
-<nav class="hidden md:flex gap-gutter items-center">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html">דף הבית</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="about.html">אודות</a>
-
-<!-- סמינרים Dropdown Menu -->
-<div class="relative group">
-<button class="text-on-surface-variant group-hover:text-primary transition-colors font-label-md text-label-md flex items-center gap-1 py-1 focus:outline-none cursor-pointer">
-<span>סמינרים</span>
-<span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
-</button>
-<div class="absolute right-0 top-full mt-1 w-60 bg-surface border border-outline-variant rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-<a class="block px-4 py-2.5 text-on-surface hover:bg-secondary-container hover:text-primary transition-colors font-medium text-sm" href="autumn-seminar.html">סמינר סתיו (ארוך)</a>
-<a class="block px-4 py-2.5 text-on-surface hover:bg-secondary-container hover:text-primary transition-colors font-medium text-sm border-t border-outline-variant/30" href="spring-seminar.html">סמינר אביב (קצר)</a>
-<a class="block px-4 py-2.5 text-on-surface hover:bg-secondary-container hover:text-primary transition-colors font-medium text-sm border-t border-outline-variant/30" href="youth-seminar.html">סמינר נוער</a>
-<a class="block px-4 py-2.5 text-on-surface hover:bg-secondary-container hover:text-primary transition-colors font-medium text-sm border-t border-outline-variant/30" href="reconciliation.html">קורס מבוא מכיבוש לפיוס</a>
+<body class="dr-page font-body-md text-body-md overflow-x-hidden">
+<header class="dr-header">
+<div class="dr-header__bar">
+<a href="index.html" class="dr-brand" aria-label="מדרשת דרור - דף הבית"><img alt="מדרשת דרור לוגו" src="logo_circle.png" width="52" height="52"><span>מדרשת דרור</span></a>
+<nav class="dr-nav" aria-label="ניווט ראשי">
+<a href="index.html">דף הבית</a>
+<a href="about.html">אודות</a>
+<div class="dr-nav__group">
+<button type="button" class="dr-nav__toggle" aria-expanded="false" aria-haspopup="true"><span>סמינרים</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></button>
+<div class="dr-nav__menu">
+<a href="autumn-seminar.html">סמינר סתיו (ארוך)</a>
+<a href="spring-seminar.html">סמינר אביב (קצר)</a>
+<a href="youth-seminar.html">סמינר נוער</a>
+<a href="reconciliation.html">קורס מבוא מכיבוש לפיוס</a>
 </div>
 </div>
-
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="index.html#contact">צור קשר</a>
+<a href="index.html#contact">צור קשר</a>
 </nav>
-<button id="mobile-menu-btn" type="button" class="md:hidden p-2 -m-2 text-primary rounded-md" aria-label="תפריט" aria-expanded="false" aria-controls="mobile-menu"><span class="material-symbols-outlined text-3xl leading-none">menu</span></button>
+<button id="mobile-menu-btn" type="button" class="dr-menu-btn" aria-label="תפריט" aria-expanded="false" aria-controls="mobile-menu"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
 </div>
-<div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant bg-surface shadow-lg">
-<nav class="flex flex-col px-margin-mobile py-2 font-label-md text-label-md">
-<a class="py-3 text-on-surface hover:text-primary" href="index.html">דף הבית</a>
-<a class="py-3 text-on-surface hover:text-primary border-t border-outline-variant/30" href="about.html">אודות</a>
-<span class="pt-3 pb-1 text-caption text-on-surface-variant border-t border-outline-variant/30">סמינרים</span>
-<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="autumn-seminar.html">סמינר סתיו (ארוך)</a>
-<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="spring-seminar.html">סמינר אביב (קצר)</a>
-<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="youth-seminar.html">סמינר נוער</a>
-<a class="py-2.5 pr-4 text-on-surface hover:text-primary" href="reconciliation.html">קורס מבוא מכיבוש לפיוס</a>
-<a class="py-3 text-on-surface hover:text-primary border-t border-outline-variant/30" href="index.html#contact">צור קשר</a>
+<div id="mobile-menu" class="dr-mobile" hidden>
+<nav aria-label="ניווט ראשי בטלפון">
+<a href="index.html">דף הבית</a>
+<a href="about.html">אודות</a>
+<span class="dr-mobile__label">סמינרים</span>
+<a class="dr-mobile__sub" href="autumn-seminar.html">סמינר סתיו (ארוך)</a>
+<a class="dr-mobile__sub" href="spring-seminar.html">סמינר אביב (קצר)</a>
+<a class="dr-mobile__sub" href="youth-seminar.html">סמינר נוער</a>
+<a class="dr-mobile__sub" href="reconciliation.html">קורס מבוא מכיבוש לפיוס</a>
+<a href="index.html#contact">צור קשר</a>
 </nav>
 </div>
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative h-[85vh] flex items-center justify-center overflow-hidden transition-all duration-1000 opacity-100">
-<div class="absolute inset-0 z-0"><img alt="מדרשת דרור" class="w-full h-full object-cover" src="home.png"></div>
-<div class="relative z-10 text-center px-margin-mobile">
-<h1 class="text-white font-display-lg text-display-lg-mobile md:text-display-lg max-w-3xl mx-auto mb-gutter drop-shadow-lg">
-                    מדרשת דרור - הבית לסמינרים פוליטיים חברתיים
-                </h1>
-<p class="text-white font-headline-md text-headline-md max-w-2xl mx-auto opacity-90 drop-shadow-md">
-                    "וּקְרָאתֶם דְּרוֹר בָּאָרֶץ לְכָל יֹשְׁבֶיהָ"
-                </p>
-<div class="mt-section-gap flex gap-gutter justify-center">
-<a class="bg-primary text-on-primary px-8 py-3 rounded-md font-headline-md text-headline-md hover:scale-105 transition-slow" href="#programs">הסמינרים שלנו</a>
-<a class="border border-white text-white px-8 py-3 rounded-md font-headline-md text-headline-md hover:bg-white hover:text-primary transition-slow" href="#contact">בואו ניצור סמינר</a></div>
+<section class="dr-hero">
+<div class="dr-hero__inner">
+<div class="dr-hero__text">
+<svg class="dr-hero__birds" viewBox="0 0 72 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10 Q10 3 15 11 Q19 4 26 5"/><path d="M31 17 Q36 11 40 17 Q44 12 50 13"/><path d="M53 6 Q57 2 61 7 Q64 3 69 4"/></svg>
+<h1>מדרשת דרור - הבית לסמינרים פוליטיים חברתיים</h1>
+<p class="dr-hero__quote">"וּקְרָאתֶם דְּרוֹר בָּאָרֶץ לְכָל יֹשְׁבֶיהָ"</p>
+<div class="dr-hero__actions">
+<a class="dr-btn dr-btn--primary" href="#programs">הסמינרים שלנו</a>
+<a class="dr-btn dr-btn--ghost" href="#contact">בואו ניצור סמינר</a>
+</div>
+</div>
+<figure class="dr-hero__media"><img alt="מדרשת דרור" src="home.png" fetchpriority="high"></figure>
 </div>
 </section>
 <!-- About Intro Section -->
@@ -205,10 +86,11 @@
 </div>
 </section>
 <!-- Programs Overview (Bento Grid Style) -->
-<section class="py-section-gap bg-soft-cream transition-all duration-1000 opacity-100" id="programs">
+<section class="py-section-gap dr-band transition-all duration-1000 opacity-100" id="programs">
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="text-center mb-section-gap">
-<h2 class="font-display-lg text-display-lg-mobile md:text-headline-lg text-deep-charcoal mb-4">בואו ללמוד אצלנו</h2>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-lg text-primary mb-4">בואו ללמוד אצלנו</h2>
+<span class="dr-ornament mb-6" aria-hidden="true"></span>
 <p class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-surface-variant">
                         מגוון סמינרים ביקורתיים ומעמיקים על הסכסוך הישראלי פלסטיני, המותאמים לקהלים שונים ולשלבים שונים של מעורבות.
                     </p>
@@ -280,19 +162,19 @@
 </section>
 <!-- Partnership/Donation Section -->
 <section class="py-section-gap px-margin-desktop transition-all duration-1000 opacity-100">
-<div class="max-w-container-max mx-auto bg-primary-container rounded-3xl p-gutter md:p-section-gap flex flex-col md:flex-row items-center gap-gutter text-on-primary-container">
+<div class="max-w-container-max mx-auto dr-wash border border-[#E3ECE8] rounded-3xl p-gutter md:p-section-gap flex flex-col md:flex-row items-center gap-10 text-on-primary-container">
 <div class="flex-1 space-y-gutter">
 <h2 class="font-headline-lg text-headline-lg">שותפות למען העתיד</h2>
 <p class="font-body-lg text-body-lg opacity-90 leading-relaxed">
                         מדרשת דרור היא פרויקט משותף של ארגון <strong>לוחמים לשלום</strong> וארגון <strong>שוברים שתיקה</strong>. הפעילות שלנו מבוססת כולה על תרומות של אזרחים המאמינים בכוחו של חינוך פוליטי.
                     </p>
 <div class="flex gap-gutter">
-<a href="https://secure.cardcom.solutions/e/vIYmhhIYBkmzveARZsw" target="_blank" rel="noopener" class="inline-block bg-white text-primary px-8 py-3 rounded-md font-headline-md transition-slow hover:bg-opacity-90">תרומה לפרויקט</a>
+<a href="https://secure.cardcom.solutions/e/vIYmhhIYBkmzveARZsw" target="_blank" rel="noopener" class="dr-btn dr-btn--primary">תרומה לפרויקט</a>
 </div>
 </div>
 <div class="flex-1 w-full flex justify-center">
 <div class="relative w-full max-w-sm aspect-square">
-<img alt="מדרשת דרור פעילות" class="w-full h-full object-cover rounded-2xl rotate-3 shadow-xl" src="nazarath_hall.jpg">
+<img alt="מדרשת דרור פעילות" class="w-full h-full object-cover rounded-full border-[6px] border-white shadow-xl" src="nazarath_hall.jpg">
 </div>
 </div>
 </div>
@@ -423,68 +305,17 @@ if (new URLSearchParams(location.search).get('sent') === '1') {
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-secondary-container dark:bg-on-secondary-container mt-section-gap">
-<div class="flex flex-col md:flex-row-reverse justify-between items-center w-full px-margin-desktop py-gutter gap-base max-w-container-max mx-auto">
-<div class="flex items-center gap-gutter font-body-md text-body-md text-on-secondary-container">
-<a class="hover:text-warm-wood transition-colors" href="https://www.facebook.com/profile.php?id=61557330713450" target="_blank" rel="noopener" aria-label="פייסבוק" title="פייסבוק"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
-<a class="hover:text-warm-wood transition-colors" href="https://www.instagram.com/midreshetdror/" target="_blank" rel="noopener" aria-label="אינסטגרם" title="אינסטגרם"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-<a class="hover:text-warm-wood transition-colors" href="https://wa.me/972523640090" target="_blank" rel="noopener" aria-label="וואטסאפ 052-3640090" title="וואטסאפ 052-3640090"><svg class="w-7 h-7" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M8.6 7.1c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2.1.4 0 .5l-.4.6c-.1.2-.2.3 0 .5.3.6.8 1.2 1.4 1.7.7.6 1.2.8 1.5.9.2.1.3.1.4-.1l.6-.8c.1-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.2.1.8-.2 1.3-.2.5-1.2 1.1-1.7 1.1-.4.1-1 .2-3.2-.9-2.6-1.2-4.1-3.8-4.2-4-.1-.2-.9-1.2-.9-2.4 0-1.1.5-1.6.8-1.9Z" fill="currentColor"/></svg></a>
-<a class="hover:text-warm-wood transition-colors" href="mailto:info@midreshet-dror.com" aria-label="אימייל" title="אימייל"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg></a>
-<a class="hover:text-warm-wood transition-colors" href="privacy.html">מדיניות פרטיות</a>
+<footer class="dr-footer">
+<div class="dr-footer__inner">
+<div class="dr-footer__brand"><a href="index.html" aria-label="מדרשת דרור - דף הבית" title="דף הבית"><img alt="מדרשת דרור" src="logo_circle.png" width="60" height="60"></a><span>© 2026 מדרשת דרור</span></div>
+<div class="dr-footer__links">
+<a href="https://www.facebook.com/profile.php?id=61557330713450" target="_blank" rel="noopener" aria-label="פייסבוק" title="פייסבוק"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+<a href="https://www.instagram.com/midreshetdror/" target="_blank" rel="noopener" aria-label="אינסטגרם" title="אינסטגרם"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+<a href="https://wa.me/972523640090" target="_blank" rel="noopener" aria-label="וואטסאפ 052-3640090" title="וואטסאפ 052-3640090"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 7.1c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2.1.4 0 .5l-.4.6c-.1.2-.2.3 0 .5.3.6.8 1.2 1.4 1.7.7.6 1.2.8 1.5.9.2.1.3.1.4-.1l.6-.8c.1-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.2.1.8-.2 1.3-.2.5-1.2 1.1-1.7 1.1-.4.1-1 .2-3.2-.9-2.6-1.2-4.1-3.8-4.2-4-.1-.2-.9-1.2-.9-2.4 0-1.1.5-1.6.8-1.9Z" fill="currentColor"/></svg></a>
+<a href="mailto:info@midreshet-dror.com" aria-label="אימייל" title="אימייל"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg></a>
+<a class="dr-footer__text" href="privacy.html">מדיניות פרטיות</a>
 </div>
-<div class="flex items-center gap-3 font-body-md text-body-md text-on-secondary-container"><a href="index.html" class="shrink-0" aria-label="מדרשת דרור - דף הבית" title="דף הבית"><img alt="מדרשת דרור" class="h-12 w-auto" src="logo_circle.png"></a><span class="opacity-80">© 2026 מדרשת דרור</span></div>
 </div>
 </footer>
-<script>
-        // Smooth scroll for anchors
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Simple scroll reveal effect for sections
-        const sections = document.querySelectorAll('section');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        sections.forEach(section => {
-            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
-            observer.observe(section);
-        });
-    </script>
-
-
-
-
-<script>
-// Mobile menu: toggle the panel, mark the current page, close after picking a link
-(function () {
-  var btn = document.getElementById('mobile-menu-btn');
-  var menu = document.getElementById('mobile-menu');
-  if (!btn || !menu) return;
-  var icon = btn.querySelector('span');
-  function setOpen(open) {
-    menu.classList.toggle('hidden', !open);
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    icon.textContent = open ? 'close' : 'menu';
-  }
-  btn.addEventListener('click', function () { setOpen(menu.classList.contains('hidden')); });
-  var page = location.pathname.split('/').pop() || 'index.html';
-  menu.querySelectorAll('a').forEach(function (a) {
-    if (a.getAttribute('href') === page) a.classList.add('text-primary', 'font-bold');
-    a.addEventListener('click', function () { setOpen(false); });
-  });
-})();
-</script>
+<script src="assets/site.js"></script>
 </body></html>
