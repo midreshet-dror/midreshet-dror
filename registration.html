@@ -85,9 +85,14 @@
 </fieldset>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2 md:col-span-2">
-<label for="r-name" class="block font-label-md font-bold">שם מלא <span class="text-warm-wood" aria-hidden="true">*</span></label>
-<input id="r-name" name="full_name" type="text" required autocomplete="name" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none">
+<!-- First and last name are joined into "full_name" on send, which is what the sign-up sheet script expects -->
+<div class="space-y-2">
+<label for="r-first" class="block font-label-md font-bold">שם פרטי <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<input id="r-first" type="text" required autocomplete="given-name" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none">
+</div>
+<div class="space-y-2">
+<label for="r-last" class="block font-label-md font-bold">שם משפחה <span class="text-warm-wood" aria-hidden="true">*</span></label>
+<input id="r-last" type="text" required autocomplete="family-name" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none">
 </div>
 <div class="space-y-2">
 <label for="r-phone" class="block font-label-md font-bold">טלפון <span class="text-warm-wood" aria-hidden="true">*</span></label>
@@ -201,7 +206,9 @@
     }
     submit.disabled = true;
     submit.textContent = 'שולחים...';
-    fetch(SCRIPT_URL, { method: 'POST', body: new URLSearchParams(new FormData(form)) })
+    var data = new URLSearchParams(new FormData(form));
+    data.set('full_name', (document.getElementById('r-first').value.trim() + ' ' + document.getElementById('r-last').value.trim()).trim());
+    fetch(SCRIPT_URL, { method: 'POST', body: data })
       .then(function (res) { return res.json(); })
       .then(function (data) {
         if (!data.ok) throw new Error(data.error || 'error');
