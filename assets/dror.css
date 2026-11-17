@@ -179,16 +179,15 @@ body .shadow-sm { box-shadow: 0 10px 30px -24px rgba(47, 53, 55, .28); }
 .dr-mobile__label { padding: 13px 4px 4px; font-size: .875rem; color: var(--ink-soft); border-top: 1px solid #EEF2F2; }
 
 /* ---------- Hero (same pattern on every page) ---------- */
-/* Full-width 16:9 photo, title and text sit on the photo (start side, bottom) */
+/* Full-width wide photo, title and text sit on the photo (start side, bottom).
+   Height follows the page width (about 2.4:1), never below 460px so the text fits on phones, never above 640px. */
 .dr-hero {
   position: relative;
   overflow: hidden;
   display: flex;
-  min-height: 540px;
+  height: clamp(460px, 42vw, 640px);
   background: #3A4446;
 }
-/* 16:9 from 960px up; below that a 16:9 box is too short for the text, so the height stays at 540px */
-@media (min-width: 960px) { .dr-hero { aspect-ratio: 16 / 9; min-height: 0; } }
 .dr-hero__inner {
   flex: 1;
   width: 100%;
