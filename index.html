@@ -180,11 +180,11 @@
 </div>
 </section>
 <!-- Contact Section -->
-<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto transition-all duration-1000 opacity-100" id="contact">
-<div class="flex flex-col gap-section-gap md:flex-row">
-<div class="md:w-1/2 space-y-gutter">
+<section class="py-section-gap px-margin-desktop transition-all duration-1000 opacity-100" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="space-y-gutter">
 <h2 class="font-display-lg text-display-lg-mobile text-primary">בואו נדבר</h2>
-<p class="font-headline-md text-headline-md text-on-surface-variant">מתעניינות.ים בתוכניות? יש שאלות? מלאו את הטופס ונחזור אליכן.ם בהקדם האפשרי.</p>
+<p class="font-headline-md text-headline-md text-on-surface-variant max-w-2xl">מתעניינות.ים בתוכניות? יש שאלות? מלאו את הטופס ונחזור אליכן.ם בהקדם האפשרי.</p>
 <div class="pt-gutter space-y-4">
 <div class="flex items-center gap-base">
 <span class="material-symbols-outlined text-primary">mail</span>
@@ -197,18 +197,18 @@
 <a class="text-primary hover:text-warm-wood transition-colors" href="mailto:info@midreshet-dror.com" aria-label="אימייל" title="אימייל"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg></a>
 </div>
 </div>
-<div class="bg-white p-gutter md:p-10 rounded-3xl shadow-sm border border-outline-variant !mt-10">
+<div class="bg-white p-gutter md:p-section-gap rounded-3xl shadow-sm border border-outline-variant !mt-10">
 <!-- Submissions are emailed to the midrasha via FormSubmit (formsubmit.co) -->
-<form class="space-y-gutter" action="https://formsubmit.co/info@midreshet-dror.com" method="POST">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-gutter" action="https://formsubmit.co/info@midreshet-dror.com" method="POST">
 <input type="hidden" name="_subject" value="הודעה חדשה מאתר מדרשת דרור">
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_next" value="https://midreshet-dror.github.io/midreshet-dror/index.html?sent=1#contact">
 <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-<div id="form-sent" class="hidden flex items-center gap-3 bg-spring-mist border border-primary/30 text-primary rounded-md p-4" role="status">
+<div id="form-sent" class="md:col-span-2 hidden flex items-center gap-3 bg-spring-mist border border-primary/30 text-primary rounded-md p-4" role="status">
 <span class="material-symbols-outlined">check_circle</span>
 <span class="font-bold">תודה! ההודעה נשלחה ונחזור אליכן.ם בהקדם.</span>
 </div>
-<div class="grid grid-cols-2 gap-gutter">
+<div class="md:col-span-2 grid grid-cols-2 gap-gutter">
 <div class="space-y-2">
 <label class="block text-right font-label-md" for="f-first">שם פרטי</label>
 <input id="f-first" name="שם פרטי" autocomplete="given-name" required class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" type="text">
@@ -226,7 +226,7 @@
 <label class="block text-right font-label-md" for="f-phone">מספר טלפון</label>
 <input id="f-phone" name="טלפון" autocomplete="tel" inputmode="tel" required pattern="[0-9+\-\s]{9,20}" title="מספר טלפון, למשל 050-1234567" class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none text-right" type="tel" dir="ltr">
 </div>
-<div class="space-y-2">
+<div class="space-y-2 md:col-span-2">
 <label class="block text-right font-label-md" for="f-topic">במה אתם מתעניינים?</label>
 <select id="f-topic" name="נושא" required class="w-full bg-soft-cream border border-outline-variant rounded-md py-3 pr-3 pl-10 [background-position:left_0.75rem_center] focus:ring-2 focus:ring-primary focus:outline-none">
 <option value="" disabled selected>בחרו אפשרות</option>
@@ -237,12 +237,12 @@
 <option>כללי</option>
 </select>
 </div>
-<div class="space-y-2">
+<div class="space-y-2 md:col-span-2">
 <label class="block text-right font-label-md" for="f-message">תוכן ההודעה</label>
 <textarea id="f-message" name="הודעה" required class="w-full bg-soft-cream border border-outline-variant rounded-md p-3 focus:ring-2 focus:ring-primary focus:outline-none" rows="4"></textarea>
 </div>
-<button class="w-full bg-primary text-on-primary py-4 rounded-md font-headline-md hover:bg-opacity-90 transition-all" type="submit">שלחו הודעה</button>
-<p class="text-sm text-on-surface-variant text-center">הפרטים ישמשו רק כדי לחזור אליכם. <a href="privacy.html" class="underline text-primary">מדיניות הפרטיות</a></p>
+<button class="md:col-span-2 w-full md:w-auto md:min-w-[300px] md:justify-self-start bg-primary text-on-primary py-4 px-10 rounded-md font-headline-md hover:bg-opacity-90 transition-all" type="submit">שלחו הודעה</button>
+<p class="md:col-span-2 text-sm text-on-surface-variant text-center md:text-right">הפרטים ישמשו רק כדי לחזור אליכם. <a href="privacy.html" class="underline text-primary">מדיניות הפרטיות</a></p>
 </form>
 <script>
 // Coming from a spring-round sign-up button (?round=a / ?round=b): preselect the topic and prefill the message
@@ -267,39 +267,6 @@ if (new URLSearchParams(location.search).get('sent') === '1') {
   document.getElementById('form-sent').classList.remove('hidden');
 }
 </script>
-</div>
-</div>
-<!-- FAQ -->
-<div class="md:w-1/2">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-4">שאלות ותשובות</h3>
-<div class="space-y-3">
-<details class="group bg-soft-cream border border-outline-variant/60 rounded-lg">
-<summary class="flex justify-between items-center gap-4 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden p-4 font-bold text-body-lg">
-<span>מהי מדרשת דרור?</span>
-<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-4 pb-4 text-body-md text-on-surface-variant leading-relaxed">
-                            מדרשת דרור קמה במטרה לפתח מנהיגות אזרחית צעירה שתפעל להעלאת מודעות וקידום פעילות בנושא הסכסוך הישראלי-פלסטיני, ולנסות לייצר מציאות שוויונית יותר בין הים לנהר.
-                        </div>
-</details>
-<details class="group bg-soft-cream border border-outline-variant/60 rounded-lg">
-<summary class="flex justify-between items-center gap-4 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden p-4 font-bold text-body-lg">
-<span>מי יכול להשתתף בסמינרים?</span>
-<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-4 pb-4 text-body-md text-on-surface-variant leading-relaxed">
-                            הסמינרים פתוחים לכל מי שמעוניין להעמיק את ידיעותיו, לבחון את עמדותיו ולהכיר את המציאות בשטח מקרוב. אנו פונים לקהלים מגוונים - סטודנטים, צעירים, ואזרחים פעילים.
-                        </div>
-</details>
-<details class="group bg-soft-cream border border-outline-variant/60 rounded-lg">
-<summary class="flex justify-between items-center gap-4 cursor-pointer list-none [&amp;::-webkit-details-marker]:hidden p-4 font-bold text-body-lg">
-<span>איפה מתקיימות הפעילויות?</span>
-<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-4 pb-4 text-body-md text-on-surface-variant leading-relaxed">
-                            הפעילויות משלבות מפגשים עיוניים בערים מרכזיות (תל אביב, ירושלים וחיפה), וכן סיורי שטח מעמיקים ברחבי הגדה המערבית וקו התפר.
-                        </div>
-</details>
 </div>
 </div>
 </div>
