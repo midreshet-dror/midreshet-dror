@@ -86,7 +86,7 @@ tailwind.config = {
         "margin-mobile": "16px",
         "base": "8px",
         "gutter": "24px",
-        "section-gap": "88px"
+        "section-gap": "56px"
       },
       fontFamily: {
         "sans": ["Assistant", "Heebo", "sans-serif"],

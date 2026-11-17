@@ -290,7 +290,7 @@ body .shadow-sm { box-shadow: 0 10px 30px -24px rgba(47, 53, 55, .28); }
 .dr-wash { background: linear-gradient(120deg, var(--sage-mist) 0%, var(--sky-mist) 52%, var(--peach-mist) 100%); }
 
 /* ---------- Closing call-to-action ---------- */
-.dr-cta { padding: 88px 16px 0; }
+.dr-cta { padding: 56px 16px 0; }
 .dr-cta__card {
   position: relative;
   max-width: 1200px;
@@ -325,7 +325,7 @@ main input:focus, main select:focus, main textarea:focus { background-color: #ff
 
 /* ---------- Footer ---------- */
 .dr-footer {
-  margin-top: 88px;
+  margin-top: 64px;
   border-top: 1px solid var(--hairline);
   background: linear-gradient(180deg, #fff 0%, var(--sky-mist) 55%, var(--sage-mist) 100%);
   color: var(--ink-soft);
@@ -360,8 +360,16 @@ main input:focus, main select:focus, main textarea:focus { background-color: #ff
 .dr-footer__links a.dr-footer__text { padding: 0 12px; font-weight: 600; }
 
 /* EU partnership line above the footer */
-.dr-eu { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 64px 16px 0; color: var(--ink-soft); }
-.dr-eu + .dr-footer { margin-top: 40px; }
+.dr-eu { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 48px 16px 0; color: var(--ink-soft); }
+.dr-eu + .dr-footer { margin-top: 32px; }
+
+/* Space between page sections: 56px each side on wide screens (theme.js "section-gap"), a little less on phones */
+@media (max-width: 767px) {
+  body .py-section-gap { padding-top: 44px; padding-bottom: 44px; }
+  body .mb-section-gap { margin-bottom: 36px; }
+  body .gap-section-gap { gap: 40px; }
+  .dr-cta { padding-top: 44px; }
+}
 
 /* ---------- Privacy policy text ---------- */
 .privacy h2 { font-family: var(--serif); font-size: 1.6rem; font-weight: 500; color: var(--sage-deep); margin: 2.75rem 0 .75rem; }
