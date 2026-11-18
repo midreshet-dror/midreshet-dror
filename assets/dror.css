@@ -79,7 +79,11 @@ body .shadow-sm { box-shadow: 0 10px 30px -24px rgba(47, 53, 55, .28); }
   -webkit-backdrop-filter: saturate(1.4) blur(10px);
   backdrop-filter: saturate(1.4) blur(10px);
   border-bottom: 1px solid var(--hairline);
+  transition: transform .35s ease, opacity .35s ease, box-shadow .35s ease;
 }
+/* Slides away when scrolling down, comes back when scrolling up (assets/site.js) */
+.dr-header.is-hidden { transform: translateY(-100%); opacity: 0; }
+.dr-header.is-scrolled { box-shadow: 0 10px 28px -22px rgba(47, 53, 55, .35); }
 .dr-header__bar {
   max-width: 1200px;
   margin: 0 auto;
